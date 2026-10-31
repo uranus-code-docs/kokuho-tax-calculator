@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "municipalityCode": "102024",
+    "municipalityName": "高崎市",
+    "fiscalYear": 2026,
+    "levyType": "tax",
+    "status": "draft",
+    "sources": [
+      { "title": "国民健康保険税の計算（試算例・試算表Excel）", "url": "https://www.city.takasaki.gunma.jp/page/3607.html", "retrievedAt": "2026-10-05" },
+      { "title": "国民健康保険税（税率表）", "url": "https://www.city.takasaki.gunma.jp/page/3606.html", "retrievedAt": "2026-10-05" }
+    ],
+    "verifiedAt": null,
+    "reviewer": null
+  },
+  "ageClasses": { "seniorAge": 65, "preschoolAge": 6, "minorAge": 18, "retireAge": 75 },
+  "basicDeduction": 430000,
+  "income": {
+    "salaryDeduction": [
+      { "from": 1, "round": null, "rate": 0, "subtract": 0 },
+      { "from": 651000, "round": null, "rate": 1, "subtract": 650000 },
+      { "from": 1900000, "round": { "unit": 4000, "mode": "floor" }, "rate": 0.7, "subtract": 80000 },
+      { "from": 3600000, "round": { "unit": 4000, "mode": "floor" }, "rate": 0.8, "subtract": 440000 },
+      { "from": 6600000, "round": null, "rate": 0.9, "subtract": 1100000 },
+      { "from": 8500000, "round": null, "rate": 1, "subtract": 1950000 }
+    ],
+    "pensionDeduction": {
+      "under65": [
+        { "from": 1, "rate": 1, "subtract": 600000 },
+        { "from": 1300000, "rate": 0.75, "subtract": 275000 },
+        { "from": 4100000, "rate": 0.85, "subtract": 685000 },
+        { "from": 7700000, "rate": 0.95, "subtract": 1455000 },
+        { "from": 10000001, "rate": 1, "subtract": 1955000 }
+      ],
+      "over65": [
+        { "from": 1, "rate": 1, "subtract": 1100000 },
+        { "from": 3300000, "rate": 0.75, "subtract": 275000 },
+        { "from": 4100000, "rate": 0.85, "subtract": 685000 },
+        { "from": 7700000, "rate": 0.95, "subtract": 1455000 },
+        { "from": 10000001, "rate": 1, "subtract": 1955000 }
+      ]
+    },
+    "salaryPensionOffset": { "perItemCap": 100000 },
+    "salarySpecialReliefFactor": 0.3
+  },
+  "reduction": {
+    "judgementPensionExtraDeduction": 150000,
+    "salaryEarnerCriteria": { "salary": 550000, "pensionUnder65": 600000, "pension65Plus": 1250000 },
+    "salaryEarnerExtraPerPerson": 100000,
+    "tiers": [
+      { "rate": 0.7, "base": 430000, "perInsured": 0 },
+      { "rate": 0.5, "base": 430000, "perInsured": 310000 },
+      { "rate": 0.2, "base": 430000, "perInsured": 570000 }
+    ],
+    "requiresDeclaration": true
+  },
+  "householdRelief": { "half": { "factor": 0.5 }, "quarter": { "factor": 0.75 } },
+  "categories": [
+    {
+      "id": "medical", "label": "医療分", "incomeRate": 6.8, "assetRate": 0,
+      "perCapita": { "amount": 27400, "ageMultiplier": { "preschool": 0.5 } },
+      "perHousehold": 21400, "cap": 670000, "capMonthlyRounding": "round",
+      "eligibility": {}, "householdReliefApplies": true
+    },
+    {
+      "id": "support", "label": "後期高齢者支援金分", "incomeRate": 2.5, "assetRate": 0,
+      "perCapita": { "amount": 9700, "ageMultiplier": { "preschool": 0.5 } },
+      "perHousehold": 6900, "cap": 260000, "capMonthlyRounding": "floor",
+      "eligibility": {}, "householdReliefApplies": true
+    },
+    {
+      "id": "care", "label": "介護分（40〜64歳）", "incomeRate": 2.1, "assetRate": 0,
+      "perCapita": { "amount": 10600 },
+      "perHousehold": 6100, "cap": 170000, "capMonthlyRounding": "floor",
+      "eligibility": { "minAge": 40, "maxAge": 64 }, "householdReliefApplies": false
+    },
+    {
+      "id": "child", "label": "子ども・子育て支援金分", "incomeRate": 0.3, "assetRate": 0,
+      "perCapita": { "amount": 1300, "ageMultiplier": { "preschool": 0, "under18": 0 } },
+      "perHousehold": 800, "cap": 30000, "capMonthlyRounding": "floor",
+      "eligibility": {}, "householdReliefApplies": true
+    }
+  ],
+  "capMode": "monthly"
+}

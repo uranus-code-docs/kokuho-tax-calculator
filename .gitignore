@@ -1,0 +1,32 @@
+# 依存・ビルド成果物
+node_modules/
+dist/
+
+# 認証情報（Basic認証のパスワードファイル）
+.htpasswd
+
+# tools/oracle の生成物・作業用
+tools/oracle/tmp/
+tools/oracle/sheets.json
+tools/lo-profile/
+
+# OS・エディタ
+Thumbs.db
+.DS_Store
+
+# 調査用の使い捨てスクリプト（コミットしない）
+tools/oracle/bad.mjs
+tools/oracle/dbg.mjs
+tools/oracle/dbg245.mjs
+tools/oracle/f.cjs
+tools/oracle/run1.mjs
+tools/oracle/sheet1.txt
+
+# GitHub に載せないもの
+# - 旧版（jQuery版）。参照用にローカルにのみ置く
+10/
+# - 市のExcel（毎年変わる。取得方法は xlsx/README.md）
+xlsx/*
+!xlsx/README.md
+# - 旧サイト用のサーバー設定（Reactの静的ビルドには不要。Basic認証の記述を含むため載せない）
+.htaccess

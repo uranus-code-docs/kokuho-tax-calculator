@@ -1,0 +1,146 @@
+/* 既存CSS（public/common/css）に足す最小限のスタイル。既存の見た目は変えない */
+
+/* 画面内のお知らせ（旧版の alert の代わり／確認中の表示） */
+.app-notice {
+  margin: 1em 0;
+  padding: 0.75em 1em;
+  border: 1px solid #e6c15a;
+  background: #fff8e0;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.app-notice p {
+  margin: 0;
+}
+.app-notice p + p {
+  margin-top: 0.5em;
+}
+.app-notice--info {
+  border-color: #9ec5e8;
+  background: #eef6fd;
+}
+
+.app-note {
+  display: block;
+  margin-top: 0.5em;
+  font-size: 12px;
+}
+
+/*
+ * 既存CSSは `body > .wrap` に「ヘッダーの高さ分の余白」を付けている。
+ * Reactは #root の中に描画するため、同じ指定を #root > .wrap にも付ける。
+ */
+#root > .wrap {
+  overflow: hidden;
+  padding-top: calc(var(--header-height) + var(--header-nav-form-height));
+}
+
+/* 世帯員の入力行: 既存の「続柄」行（3列＋削除ボタン96px）と同じ並び */
+.member-row {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) 96px;
+  gap: 8px;
+  align-items: end;
+  width: 100% !important;
+}
+.member-row--2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.member-row > .formset__input-child {
+  width: auto !important;
+}
+.member-row + .member-row {
+  margin-top: 8px;
+}
+@media (max-width: 959px) {
+  .member-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* 世帯員ブロック（1人分＝2〜3行） */
+.member-block + .member-block {
+  margin-top: 1.5em;
+  padding-top: 1em;
+  border-top: 1px dashed #ccc;
+}
+.member-block__check {
+  display: block;
+  margin-top: 0.75em;
+  font-size: 14px;
+}
+.member-block__months {
+  padding: 0;
+}
+
+/* 計算結果の足し算の1項 */
+.c-equation__term {
+  display: inline;
+}
+.income-row + .income-row {
+  margin-top: 0.5em;
+}
+
+/* 「?」ヘルプのバルーン。.formset と同じ背景（白）・ボーダー（--border-color-ui）・角丸で、アイコンの近くに固定表示する */
+.icon-help.is-open {
+  opacity: 1;
+}
+.help-balloon {
+  position: fixed;
+  z-index: 10000;
+  box-sizing: border-box;
+  width: max-content;
+  max-width: min(300px, calc(100vw - 16px));
+  padding: 12px 16px;
+  background: #fff;
+  border: 1px solid var(--border-color-ui, #e9eced);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  color: #333;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.7;
+  text-align: left;
+}
+.help-balloon__caret {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  margin-left: -6px;
+  background: #fff;
+  border: 1px solid var(--border-color-ui, #e9eced);
+  transform: rotate(45deg);
+}
+.help-balloon__caret--below {
+  top: -7px;
+  border-right: none;
+  border-bottom: none;
+}
+.help-balloon__caret--above {
+  bottom: -7px;
+  border-left: none;
+  border-top: none;
+}
+
+/* フッター: コピーライトの左隣に GitHub（猫のアイコン）へのリンク。グレーで控えめに表示する */
+.foot-bottom .l-container.foot-bottom__inner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+.foot-bottom__inner .copyright {
+  margin: 0;
+}
+.foot-github {
+  display: inline-flex;
+  color: #8c9199;
+  font-size: 22px;
+  line-height: 1;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.foot-github:hover,
+.foot-github:focus-visible {
+  color: #6b7078;
+}

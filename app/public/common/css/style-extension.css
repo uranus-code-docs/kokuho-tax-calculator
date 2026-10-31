@@ -1,0 +1,285 @@
+@charset "UTF-8";
+/*-------------------------------------------------------------*/
+/**
+ * 2024.03.28 update
+ * NOTE: オリジナルスタイル
+**/
+/* debugger */
+#debug {
+	background: rgba(0,0,0,0.8);
+	color: #fff;
+	font-size: 14px;
+	font-weight: 500;
+	font-family: "monospace";
+	line-height: 1.75;
+	white-space: pre;
+	width: calc( 100vw - 4em );
+	height: 200px;
+	padding: 2em;
+	position: fixed;
+	left: 2em;
+	top: 2em;
+	z-index: 50000;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+/* list ol */
+.list-ol {
+	counter-reset: list-ol-counter;
+}
+* + .list-ol {
+	margin-top: 2em;
+}
+.list-ol > li {
+	padding-left: 1.5em;
+	position: relative;
+}
+.list-ol > li + li {
+	margin-top: 0.75ex;
+}
+.list-ol > li::before {
+	counter-increment: list-ol-counter;
+	content: counter(list-ol-counter)'.';
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	transform: translate(0,0);
+}
+
+/* list notes */
+.list-notes {}
+* + .list-notes {
+	margin-top: 2em;
+}
+.list-notes > li {
+	padding-left: 1.5em;
+	position: relative;
+}
+.list-notes > li + li {
+	margin-top: 0.75ex;
+}
+.list-notes > li::before {
+	content: '';
+	display: inline-block;
+	border-radius: 50%;
+	border: 0.5em solid;
+	width: 1em;
+	height: 1em;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	transform: translate(0,33%) scale(0.75);
+	overflow: hidden;
+}
+
+/* c-equation */
+.c-equation {
+	display: flex;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+	border-radius: 1em;
+	/*border: solid 1px var(--border-color-ui);*/
+	background: var(--bg-color-ui);
+	white-space: nowrap;
+	padding: 1em;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+* + .c-equation {
+	margin-top: 1ex;
+}
+.c-equation .item--result {
+	display: inline-block;
+	border-radius: 0.5ex;
+	background: var(--bg-color-ui-dark);
+	box-shadow: 0 0 0 0.33ex var(--bg-color-ui-dark);
+	font-weight: 700;
+	padding-inline: 0.33ex;
+	margin-right: 1ex;
+}
+.c-equation * + .item--result {
+	margin-left: 1ex;
+}
+@media (max-width:767px) {
+	.c-equation {
+		border-radius: 1em;
+		border: none;
+		background: #fff;
+		width: 100%;
+		padding: 1em;
+	}
+}
+
+.c-equation__inline-stack {
+	display: inline-flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-content: stretch;
+	align-items: stretch;
+	gap: 1ex;
+}
+.c-equation__inline-stack::before,
+.c-equation__inline-stack::after {
+	display: none;
+}
+.c-equation__inline-stack > span {
+	display: flex;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+}
+.c-equation__inline-stack > span::before,
+.c-equation__inline-stack > span::after {
+	display: none;
+}
+
+
+/* 続柄 */
+/* 続柄 .formset__input-child */
+@media (min-width:960px) {
+	.style--like-adminLTE .formset__input[data-add-template="続柄"] > .formset__input-child:nth-child(1) {
+		width: calc( ( 100% - 96px - 8px * 3 ) / 3 );
+	}
+	.style--like-adminLTE .formset__input[data-add-template="続柄"] > .formset__input-child:nth-child(2) {
+		width: calc( ( 100% - 96px - 8px * 3 ) / 3 );
+	}
+	.style--like-adminLTE .formset__input[data-add-template="続柄"] > .formset__input-child:nth-child(3) {
+		width: calc( ( 100% - 96px - 8px * 3 ) / 3 );
+	}
+	.style--like-adminLTE .formset__input[data-add-template="続柄"] > .formset__input-child:nth-child(4) {
+		width: 96px;
+	}
+	.style--like-adminLTE .formset__input[data-add-template="続柄"] .select {
+		width: 100%;
+	}
+	.style--like-adminLTE .formset__input[data-add-template="続柄"] select {
+		width: 100%;
+	}
+}
+@media (max-width:959px) {
+	.style--like-adminLTE .formset__input[data-add-template="続柄"] + .formset__input[data-add-template="続柄"] {
+		margin-top: 0;
+		padding-top: 0;
+	}
+	.style--like-adminLTE .formset__input[data-add-template="続柄"] > .formset__input-child:nth-child(1) {
+		width: 88px;
+	}
+	.style--like-adminLTE .formset__input[data-add-template="続柄"] > .formset__input-child:nth-child(2) {
+		width: 88px;
+	}
+	.style--like-adminLTE .formset__input[data-add-template="続柄"] > .formset__input-child:nth-child(3) {
+		width: calc( 100% - 88px - 88px - 24px - 8px * 3 );
+	}
+	.style--like-adminLTE .formset__input[data-add-template="続柄"] > .formset__input-child:nth-child(4) {
+		width: 24px;
+	}
+	.style--like-adminLTE .formset__input[data-add-template="続柄"] .select {
+		width: 100%;
+	}
+	.style--like-adminLTE .formset__input[data-add-template="続柄"] select {
+		width: 100%;
+	}
+	.style--like-adminLTE .formset__input[data-add-template="続柄"] .input-add {
+		min-width: 0;
+		padding: 0;
+	}
+	.style--like-adminLTE .formset__input[data-add-template="続柄"] .input-add .icon-del {
+		transform: translate(0,8.33%) scale(1.333);
+	}
+	.style--like-adminLTE .formset__input[data-add-template="続柄"] .input-add .icon-del + span {
+		display: none;
+	}
+}
+
+/**
+ * data-item
+ * NOTE: JSで書き込まれるデータ部分
+**/
+
+[data-item]::before {content: '0';}
+
+[data-item="課税所得の計算の続柄"] {
+	display: inline-block;
+	min-width: 2em;
+	text-align: center;
+}
+[data-item="課税所得の計算の続柄"]::before {
+	content: '本人';
+}
+
+[data-item="課税所得の計算の小計"] {
+	display: inline-block;
+	text-align: center;
+}
+
+/* 続柄 .formset__input-child-label */
+[data-add-template="続柄"] + [data-add-template="続柄"] .formset__input-child-label {display: none;}
+
+/* 続柄 del button */
+[data-add-template="続柄"] [data-del-button] {/*margin-top: 1.5em;*/}
+[data-add-template="続柄"]:nth-child(2) [data-del-button] {display: none;}
+
+/* 各種単位 */
+[data-item="医療分-1"]::before {content: '0';}
+[data-item="医療分-2"]::before {content: '0';}
+[data-item="医療分-3"]::before {content: '0';}
+[data-item="医療分-4"]::before {content: '0';}
+[data-item="医療分-5"]::before {content: '0';}
+[data-item="医療分-6"]::before {content: '0';}
+[data-item="医療分-7"]::before {content: '0';}
+[data-item="医療分-8"]::before {content: '0';}
+[data-item="医療分-9"]::before {content: '0';}
+[data-item="支援金分-1"]::before {content: '0';}
+[data-item="支援金分-2"]::before {content: '0';}
+[data-item="支援金分-3"]::before {content: '0';}
+[data-item="支援金分-4"]::before {content: '0';}
+[data-item="支援金分-5"]::before {content: '0';}
+[data-item="支援金分-6"]::before {content: '0';}
+[data-item="支援金分-7"]::before {content: '0';}
+[data-item="支援金分-8"]::before {content: '0';}
+[data-item="支援金分-9"]::before {content: '0';}
+[data-item="介護分-1"]::before {content: '0';}
+[data-item="介護分-2"]::before {content: '0';}
+[data-item="介護分-3"]::before {content: '0';}
+[data-item="介護分-4"]::before {content: '0';}
+[data-item="介護分-5"]::before {content: '0';}
+[data-item="介護分-6"]::before {content: '0';}
+[data-item="介護分-7"]::before {content: '0';}
+[data-item="介護分-8"]::before {content: '0';}
+[data-item="介護分-9"]::before {content: '0';}
+
+[data-item-val][data-item]::before {content: attr(data-item-val);}
+
+[data-item-val][data-item="医療分-1"]::before {content: attr(data-item-val);}
+[data-item-val][data-item="医療分-2"]::before {content: attr(data-item-val);}
+[data-item-val][data-item="医療分-3"]::before {content: attr(data-item-val);}
+[data-item-val][data-item="医療分-4"]::before {content: attr(data-item-val);}
+[data-item-val][data-item="医療分-5"]::before {content: attr(data-item-val);}
+[data-item-val][data-item="医療分-6"]::before {content: attr(data-item-val);}
+[data-item-val][data-item="医療分-7"]::before {content: attr(data-item-val);}
+[data-item-val][data-item="医療分-8"]::before {content: attr(data-item-val);}
+[data-item-val][data-item="医療分-9"]::before {content: attr(data-item-val);}
+[data-item-val][data-item="支援金分-1"]::before {content: attr(data-item-val);}
+[data-item-val][data-item="支援金分-2"]::before {content: attr(data-item-val);}
+[data-item-val][data-item="支援金分-3"]::before {content: attr(data-item-val);}
+[data-item-val][data-item="支援金分-4"]::before {content: attr(data-item-val);}
+[data-item-val][data-item="支援金分-5"]::before {content: attr(data-item-val);}
+[data-item-val][data-item="支援金分-6"]::before {content: attr(data-item-val);}
+[data-item-val][data-item="支援金分-7"]::before {content: attr(data-item-val);}
+[data-item-val][data-item="支援金分-8"]::before {content: attr(data-item-val);}
+[data-item-val][data-item="支援金分-9"]::before {content: attr(data-item-val);}
+[data-item-val][data-item="介護分-1"]::before {content: attr(data-item-val);}
+[data-item-val][data-item="介護分-2"]::before {content: attr(data-item-val);}
+[data-item-val][data-item="介護分-3"]::before {content: attr(data-item-val);}
+[data-item-val][data-item="介護分-4"]::before {content: attr(data-item-val);}
+[data-item-val][data-item="介護分-5"]::before {content: attr(data-item-val);}
+[data-item-val][data-item="介護分-6"]::before {content: attr(data-item-val);}
+[data-item-val][data-item="介護分-7"]::before {content: attr(data-item-val);}
+[data-item-val][data-item="介護分-8"]::before {content: attr(data-item-val);}
+[data-item-val][data-item="介護分-9"]::before {content: attr(data-item-val);}
