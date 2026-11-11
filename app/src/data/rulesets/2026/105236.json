@@ -5,7 +5,7 @@
     "municipalityName": "千代田町",
     "fiscalYear": 2026,
     "levyType": "tax",
-    "status": "draft",
+    "status": "reviewed",
     "sources": [
       {
         "title": "国民健康保険税のしくみ",
@@ -18,8 +18,8 @@
         "retrievedAt": "2026-11-11"
       }
     ],
-    "verifiedAt": null,
-    "reviewer": null,
+    "verifiedAt": "2026-11-11",
+    "reviewer": "uranus-code-docs",
     "slug": "chiyoda",
     "caveats": [
       "RULES_ASSUMED",

@@ -5,7 +5,7 @@
     "municipalityName": "桐生市",
     "fiscalYear": 2026,
     "levyType": "tax",
-    "status": "draft",
+    "status": "reviewed",
     "sources": [
       {
         "title": "国保税の決め方（試算Excel）",
@@ -18,8 +18,8 @@
         "retrievedAt": "2026-11-11"
       }
     ],
-    "verifiedAt": null,
-    "reviewer": null,
+    "verifiedAt": "2026-11-11",
+    "reviewer": "uranus-code-docs",
     "slug": "kiryu",
     "caveats": [],
     "notes": []

@@ -64,7 +64,7 @@ describe('群馬県の市町村のページ', () => {
 
   it('安中市（資産割あり）は固定資産税額の入力欄があり、資産割が計算に入る', async () => {
     const { container, findByText } = render(<TaxPage municipality={muni('102113')} />);
-    await findByText(/確認中（試験版）/);
+    await findByText(/参考値/);
     expect(container.querySelector('h1')?.textContent).toContain('安中市');
     expect(container.textContent).toContain('資産割があります');
     change(container, '#m0-birth', '1980-06-01');
@@ -76,7 +76,7 @@ describe('群馬県の市町村のページ', () => {
 
   it('情報が不足している昭和村は、県の資料による・限度額を仮定した、などの注意書きを出す', async () => {
     const { container, findByText } = render(<TaxPage municipality={muni('104485')} />);
-    await findByText(/確認中（試験版）/);
+    await findByText(/参考値/);
     const t = container.textContent!;
     expect(t).toContain('昭和村の計算についてのご注意');
     expect(t).toContain('群馬県の資料');

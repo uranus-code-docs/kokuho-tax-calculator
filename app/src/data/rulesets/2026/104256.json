@@ -5,7 +5,7 @@
     "municipalityName": "嬬恋村",
     "fiscalYear": 2026,
     "levyType": "tax",
-    "status": "draft",
+    "status": "reviewed",
     "sources": [
       {
         "title": "国民健康保険税",
@@ -18,8 +18,8 @@
         "retrievedAt": "2026-11-11"
       }
     ],
-    "verifiedAt": null,
-    "reviewer": null,
+    "verifiedAt": "2026-11-11",
+    "reviewer": "uranus-code-docs",
     "slug": "tsumagoi",
     "caveats": [
       "RATES_FROM_PREF_ONLY",

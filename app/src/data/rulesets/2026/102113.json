@@ -5,7 +5,7 @@
     "municipalityName": "安中市",
     "fiscalYear": 2026,
     "levyType": "tax",
-    "status": "draft",
+    "status": "reviewed",
     "sources": [
       {
         "title": "市税の種類・税率（国民健康保険税）",
@@ -18,8 +18,8 @@
         "retrievedAt": "2026-11-11"
       }
     ],
-    "verifiedAt": null,
-    "reviewer": null,
+    "verifiedAt": "2026-11-11",
+    "reviewer": "uranus-code-docs",
     "slug": "annaka",
     "caveats": [
       "RULES_ASSUMED",

@@ -5,7 +5,7 @@
     "municipalityName": "渋川市",
     "fiscalYear": 2026,
     "levyType": "tax",
-    "status": "draft",
+    "status": "reviewed",
     "sources": [
       {
         "title": "令和8年度 国民健康保険税の税率等について",
@@ -18,8 +18,8 @@
         "retrievedAt": "2026-11-11"
       }
     ],
-    "verifiedAt": null,
-    "reviewer": null,
+    "verifiedAt": "2026-11-11",
+    "reviewer": "uranus-code-docs",
     "slug": "shibukawa",
     "caveats": [
       "RULES_ASSUMED",

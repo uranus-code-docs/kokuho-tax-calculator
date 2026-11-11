@@ -1,6 +1,7 @@
 {
   "fiscalYear": 2026,
   "retrievedAt": "2026-11-11",
+  "review": { "status": "reviewed", "verifiedAt": "2026-11-11", "reviewer": "uranus-code-docs" },
   "prefSource": {
     "title": "令和8年度 実際の市町村別国民健康保険税率（群馬県）",
     "url": "https://www.pref.gunma.jp/uploaded/attachment/701029.pdf"
