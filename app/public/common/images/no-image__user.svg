@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="ユーザー">
+  <!-- 背景: グレー（円形に切り抜かれても人が欠けないよう、人は中央に収める） -->
+  <rect width="120" height="120" fill="#b8bec7"/>
+  <!-- 人: 白（頭と肩） -->
+  <circle cx="60" cy="46" r="20" fill="#fff"/>
+  <path d="M20 120c0-22 17.9-38 40-38s40 16 40 38z" fill="#fff"/>
+</svg>
