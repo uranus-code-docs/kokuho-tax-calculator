@@ -33,3 +33,6 @@ xlsx/*
 # - 制作用の資料（materials/: 構築に必要な情報 / requests/: mdの草案）
 materials/
 requests/
+
+# Python のキャッシュ
+__pycache__/
