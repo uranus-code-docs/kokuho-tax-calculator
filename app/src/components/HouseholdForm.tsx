@@ -52,7 +52,7 @@ function MonthSelect(props: { id: string; label: string; help: string; blank: st
   );
 }
 
-function MemberBlock({ m, index, form }: { m: MemberForm; index: number; form: FormApi }) {
+function MemberBlock({ m, index, form, showPropertyTax }: { m: MemberForm; index: number; form: FormApi; showPropertyTax: boolean }) {
   const set = (patch: Partial<MemberForm>) => form.updateMember(m.id, patch);
   const id = (k: string) => `m${m.id}-${k}`;
   const isHead = index === 0;
@@ -99,6 +99,9 @@ function MemberBlock({ m, index, form }: { m: MemberForm; index: number; form: F
       <div className="formset__input member-row">
         <NumberField id={id('pension')} label="年金収入" help={HELP.pension} unit="円" value={m.pension} onChange={(v) => set({ pension: v })} />
         <NumberField id={id('other')} label="その他所得" help={HELP.other} unit="円" value={m.other} onChange={(v) => set({ other: v })} />
+        {showPropertyTax && (
+          <NumberField id={id('property')} label="固定資産税額" help={HELP.propertyTax} unit="円" value={m.propertyTax} onChange={(v) => set({ propertyTax: v })} />
+        )}
       </div>
       {/* 3行目（必要な人だけ）: 年度途中の加入月・脱退月 */}
       {form.showEnrollment && (
@@ -111,7 +114,7 @@ function MemberBlock({ m, index, form }: { m: MemberForm; index: number; form: F
   );
 }
 
-export function HouseholdFormSection({ form, fiscalYear }: { form: FormApi; fiscalYear: number }) {
+export function HouseholdFormSection({ form, fiscalYear, showPropertyTax = false }: { form: FormApi; fiscalYear: number; showPropertyTax?: boolean }) {
   return (
     <>
       <div className="c-head">
@@ -123,7 +126,7 @@ export function HouseholdFormSection({ form, fiscalYear }: { form: FormApi; fisc
 
       <div className="formset">
         {form.members.map((m, i) => (
-          <MemberBlock key={m.id} m={m} index={i} form={form} />
+          <MemberBlock key={m.id} m={m} index={i} form={form} showPropertyTax={showPropertyTax} />
         ))}
 
         <div className="formset__item style--like-adminLTE">

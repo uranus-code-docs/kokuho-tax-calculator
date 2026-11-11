@@ -10,6 +10,11 @@ Excelは**毎年変わる**ため、リポジトリには含めず、必要な�
 2. このフォルダに `<年度>-<団体コード>.xlsx` の名前で置く（例: `2026-102024.xlsx` = 令和8年度・高崎市）
 3. `tools/oracle/` で期待値を作り直す（手順は [tools/oracle/README.md](../tools/oracle/README.md)）
 
+## 群馬県のほかの市町村
+
+照合（`tools/gunma/gen-golden.mjs`）に使う。取得元のURLは [../docs/gunma/01-existence-check.md](../docs/gunma/01-existence-check.md) の「取得したExcel」。
+桐生市・藤岡市は `.xls` のまま置く（`2026-102032.xls`、`2026-102091.xls`）。
+
 ## 利用条件
 
 Excelの再配布・利用条件は、市のサイトの利用規約に従うこと。

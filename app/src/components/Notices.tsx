@@ -1,5 +1,5 @@
 import type { CalcSuccess } from '../domain/types';
-import type { Ruleset } from '../schema/ruleset.schema';
+import type { CaveatCodeT, Ruleset } from '../schema/ruleset.schema';
 import { yen } from '../lib/format';
 
 /** 限度額に達した区分の表示（旧版の alert の代わりに、画面内に常時表示する） */
@@ -38,7 +38,7 @@ export function NotReady({ reason, municipalityName }: { reason: string; municip
     <div className="app-notice" role="status">
       <p>
         {municipalityName}の試算は準備中です。{reason === 'INVALID' && '（データの検証に失敗したため表示できません）'}
-        詳しくは市の公式サイトをご確認ください。
+        詳しくは{municipalityName}の公式サイトをご確認ください。
       </p>
     </div>
   );
@@ -60,7 +60,39 @@ export function NoInsuredNotice() {
   );
 }
 
-export function NoticeSection({ fiscalYear }: { fiscalYear: number }) {
+/** 計算ルールの確からしさに関する注意書きの文言（ルールセットの meta.caveats） */
+export const CAVEAT_TEXT: Record<CaveatCodeT, (name: string) => string> = {
+  RATES_FROM_PREF_ONLY: (n) => `${n}の税率は、群馬県の資料「令和8年度 実際の市町村別国民健康保険税率」によります。${n}のホームページでは確認できていません。`,
+  CHILD_SUPPORT_NOT_CONFIRMED: (n) =>
+    `子ども・子育て支援金分は、${n}のホームページで確認できていないため、県の資料の額（所得割0.3％、均等割1,200円＋18歳以上100円、平等割800円）で計算しています。`,
+  CAPS_ASSUMED: () => '課税限度額は、国の基準額（医療分67万円・後期高齢者支援金分26万円・介護分17万円・子ども・子育て支援金分3万円）として計算しています。',
+  RULES_ASSUMED: () => '7割・5割・2割の軽減の判定、未就学児の均等割の軽減、端数の処理は、国の基準と高崎市の計算方法に合わせています。',
+  NOT_VERIFIED_WITH_EXCEL: (n) => `${n}の試算表（Excel）での照合はしていません。`,
+  MUNICIPAL_EXCEL_DIFFERS: (n) => `${n}の試算表（Excel）とは、次の点で結果が異なる場合があります。`,
+};
+
+/** 市町村ごとの注意書き。情報が不足している市町村ほど項目が増える */
+export function CaveatNotice({ rules }: { rules: Ruleset }) {
+  const { caveats, notes, municipalityName } = rules.meta;
+  if (caveats.length === 0 && notes.length === 0) return null;
+  return (
+    <div className="app-notice app-notice--info" role="note">
+      <p>
+        <strong>{municipalityName}の計算についてのご注意</strong>
+      </p>
+      <ul className="list-notes">
+        {caveats.map((c) => (
+          <li key={c}>{CAVEAT_TEXT[c](municipalityName)}</li>
+        ))}
+        {notes.map((t) => (
+          <li key={t}>{t}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export function NoticeSection({ fiscalYear, rules }: { fiscalYear: number; rules: Ruleset | null }) {
   return (
     <>
       <div className="c-head" id="notice">
@@ -89,17 +121,19 @@ export function NoticeSection({ fiscalYear }: { fiscalYear: number }) {
             <li>この計算は分離譲渡所得等の申告がある場合には使えません。</li>
             <li>計算式では一部の金額を見やすくするため簡略化した金額で表示しています。</li>
             <li>計算結果は概算となります。実際の税額と違う場合があります。</li>
-            <li>
-              この計算機は、高崎市ウェブサイトの
-              <a href="https://www.city.takasaki.gunma.jp/page/3608.html" target="_blank" rel="noreferrer">
-                国民健康保険税の算定
-              </a>
-              、および
-              <a href="https://www.city.takasaki.gunma.jp/page/3607.html" target="_blank" rel="noreferrer">
-                国民健康保険税の計算
-              </a>
-              を参考に作られています。
-            </li>
+            {rules && (
+              <li>
+                この計算機は、次の資料を参考に作られています。
+                {rules.meta.sources.map((s) => (
+                  <span key={s.url}>
+                    <br />
+                    <a href={s.url} target="_blank" rel="noreferrer">
+                      {s.title}
+                    </a>
+                  </span>
+                ))}
+              </li>
+            )}
           </ul>
         </div>
       </div>

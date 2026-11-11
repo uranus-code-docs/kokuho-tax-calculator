@@ -3,6 +3,7 @@ import { afterEach, describe, expect, it } from 'vitest';
 import { cleanup, fireEvent, render, waitFor } from '@testing-library/react';
 import { TaxPage } from '../src/pages/TaxPage';
 import { formToInput, emptyMember } from '../src/domain/formToInput';
+import { MUNICIPALITIES } from '../src/data/municipalities';
 
 afterEach(cleanup);
 
@@ -47,6 +48,40 @@ describe('TaxPage（画面）', () => {
     change(container, '#m0-birth', '1940-01-01');
     await findByText(/国民健康保険の対象となる方がいません/);
     expect(val(container, '国保税')).toBeUndefined();
+  });
+});
+
+describe('群馬県の市町村のページ', () => {
+  const muni = (code: string) => MUNICIPALITIES.find((m) => m.code === code)!;
+
+  it('高崎市は注意書き（市町村ごと）を出さず、メニューに35市町村のリンクがある', async () => {
+    const { container, findByText } = render(<TaxPage />);
+    await findByText(/参考値/);
+    expect(container.textContent).not.toContain('の計算についてのご注意');
+    expect(container.querySelectorAll('.nav-drawer__item a[href$=".html"]')).toHaveLength(35);
+    expect(container.querySelector('a[aria-current="page"]')?.textContent).toBe('高崎市');
+  });
+
+  it('安中市（資産割あり）は固定資産税額の入力欄があり、資産割が計算に入る', async () => {
+    const { container, findByText } = render(<TaxPage municipality={muni('102113')} />);
+    await findByText(/確認中（試験版）/);
+    expect(container.querySelector('h1')?.textContent).toContain('安中市');
+    expect(container.textContent).toContain('資産割があります');
+    change(container, '#m0-birth', '1980-06-01');
+    change(container, '#m0-other', '3000000');
+    change(container, '#m0-property', '100000');
+    // 医療分の資産割 = 100,000円 × 24% = 24,000円
+    await waitFor(() => expect(val(container, '医療分資産割')).toBe('24,000'));
+  });
+
+  it('情報が不足している昭和村は、県の資料による・限度額を仮定した、などの注意書きを出す', async () => {
+    const { container, findByText } = render(<TaxPage municipality={muni('104485')} />);
+    await findByText(/確認中（試験版）/);
+    const t = container.textContent!;
+    expect(t).toContain('昭和村の計算についてのご注意');
+    expect(t).toContain('群馬県の資料');
+    expect(t).toContain('子ども・子育て支援金分は、昭和村のホームページで確認できていない');
+    expect(t).toContain('課税限度額は、国の基準額');
   });
 });
 

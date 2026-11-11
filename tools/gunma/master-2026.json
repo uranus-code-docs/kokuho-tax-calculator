@@ -1,0 +1,1243 @@
+{
+  "fiscalYear": 2026,
+  "retrievedAt": "2026-11-11",
+  "prefSource": {
+    "title": "令和8年度 実際の市町村別国民健康保険税率（群馬県）",
+    "url": "https://www.pref.gunma.jp/uploaded/attachment/701029.pdf"
+  },
+  "note": "税率は県の税率表から転記。各区分は [所得割率%, 資産割率%, 均等割額, 平等割額]。子ども分は全市町村共通（所得割0.30%、均等割1,200円＋18歳以上100円、平等割800円）。限度額は caps（医療/支援/介護/子ども）。capsSource: official=市町村の公式ページで確認 / assumed=国の基準額を仮定",
+  "common": {
+    "child": {
+      "incomeRate": 0.3,
+      "perCapita": 1200,
+      "perCapitaAdult": 100,
+      "perHousehold": 800
+    },
+    "statutoryCaps": [
+      670000,
+      260000,
+      170000,
+      30000
+    ]
+  },
+  "municipalities": [
+    {
+      "code": "102016",
+      "name": "前橋市",
+      "slug": "maebashi",
+      "medical": [
+        7,
+        0,
+        29000,
+        19400
+      ],
+      "support": [
+        3.1,
+        0,
+        12600,
+        8400
+      ],
+      "care": [
+        2.5,
+        0,
+        12200,
+        6200
+      ],
+      "capsSource": "assumed",
+      "official": "partial",
+      "excel": null,
+      "sources": [
+        {
+          "title": "国民健康保険税（国保税）について",
+          "url": "https://www.city.maebashi.gunma.jp/soshiki/kenko/kokuminkenkohoken/gyomu/3/3/4935.html"
+        },
+        {
+          "title": "令和8年度国民健康保険税の試算をしたいとき（試算システム）",
+          "url": "https://www.city.maebashi.gunma.jp/soshiki/kenko/kokuminkenkohoken/gyomu/3/3/47850.html"
+        }
+      ],
+      "notes": [
+        "税率表が画像のため本文から確認できない。市の試算はWebシステム（Excelなし）"
+      ]
+    },
+    {
+      "code": "102024",
+      "name": "高崎市",
+      "slug": "takasaki",
+      "medical": [
+        6.8,
+        0,
+        27400,
+        21400
+      ],
+      "support": [
+        2.5,
+        0,
+        9700,
+        6900
+      ],
+      "care": [
+        2.1,
+        0,
+        10600,
+        6100
+      ],
+      "capsSource": "official",
+      "official": "yes",
+      "excel": "2026-102024.xlsx",
+      "sources": [
+        {
+          "title": "国民健康保険税の計算（試算例・試算表Excel）",
+          "url": "https://www.city.takasaki.gunma.jp/page/3607.html"
+        }
+      ],
+      "notes": [],
+      "excelVerified": true
+    },
+    {
+      "code": "102032",
+      "name": "桐生市",
+      "slug": "kiryu",
+      "medical": [
+        6.8,
+        0,
+        25800,
+        19600
+      ],
+      "support": [
+        2.6,
+        0,
+        10300,
+        7600
+      ],
+      "care": [
+        2.2,
+        0,
+        10900,
+        5600
+      ],
+      "capsSource": "excel",
+      "official": "yes",
+      "excel": "2026-102032.xls",
+      "sources": [
+        {
+          "title": "国保税の決め方（試算Excel）",
+          "url": "https://www.city.kiryu.lg.jp/kurashi/kenpo/kokuhozei/1000705.html"
+        }
+      ],
+      "notes": [],
+      "excelVerified": true
+    },
+    {
+      "code": "102041",
+      "name": "伊勢崎市",
+      "slug": "isesaki",
+      "medical": [
+        6.9,
+        0,
+        26000,
+        20500
+      ],
+      "support": [
+        2.6,
+        0,
+        10000,
+        7500
+      ],
+      "care": [
+        2.1,
+        0,
+        11000,
+        6100
+      ],
+      "capsSource": "official",
+      "official": "yes",
+      "excel": "2026-102041.xlsx",
+      "sources": [
+        {
+          "title": "国民健康保険の課税",
+          "url": "https://www.city.isesaki.lg.jp/soshiki/kensui/kokumin/huka/2111.html"
+        },
+        {
+          "title": "国民健康保険税の計算例（試算表Excel）",
+          "url": "https://www.city.isesaki.lg.jp/soshiki/kensui/kokumin/huka/2114.html"
+        }
+      ],
+      "notes": [],
+      "excelVerified": true,
+      "officialExamples": 1
+    },
+    {
+      "code": "102059",
+      "name": "太田市",
+      "slug": "ota",
+      "medical": [
+        7,
+        0,
+        25000,
+        23000
+      ],
+      "support": [
+        2.6,
+        0,
+        10600,
+        7700
+      ],
+      "care": [
+        2.1,
+        0,
+        11400,
+        5400
+      ],
+      "capsSource": "official",
+      "official": "yes",
+      "excel": "2026-102059.xlsx",
+      "sources": [
+        {
+          "title": "国民健康保険税（試算表Excel）",
+          "url": "https://www.city.ota.gunma.jp/page/2505.html"
+        }
+      ],
+      "notes": [],
+      "excelVerified": true
+    },
+    {
+      "code": "102067",
+      "name": "沼田市",
+      "slug": "numata",
+      "medical": [
+        7.3,
+        0,
+        27800,
+        22500
+      ],
+      "support": [
+        2.6,
+        0,
+        9800,
+        7700
+      ],
+      "care": [
+        2.4,
+        0,
+        11900,
+        6700
+      ],
+      "capsSource": "official",
+      "official": "yes",
+      "excel": "2026-102067.xlsx",
+      "sources": [
+        {
+          "title": "国民健康保険税について",
+          "url": "https://www.city.numata.gunma.jp/life/kokuhonenkin/kokuho/1008520.html"
+        },
+        {
+          "title": "国民健康保険税額の試算（計算シートExcel）",
+          "url": "https://www.city.numata.gunma.jp/life/kokuhonenkin/kokuho/1009823.html"
+        }
+      ],
+      "notes": [],
+      "excelVerified": true,
+      "caveats": [
+        "MUNICIPAL_EXCEL_DIFFERS"
+      ],
+      "pageNotes": [
+        "沼田市の計算シート（Excel）は、給与収入が55万円を超え65万円以下の人を軽減判定の「給与所得者等」に数えていません。該当する人がいる世帯では、この計算機の軽減の判定が計算シートと異なることがあります（この計算機は国の基準で判定しています）。"
+      ]
+    },
+    {
+      "code": "102075",
+      "name": "館林市",
+      "slug": "tatebayashi",
+      "medical": [
+        6.9,
+        0,
+        27600,
+        20600
+      ],
+      "support": [
+        2.6,
+        0,
+        10400,
+        7600
+      ],
+      "care": [
+        2.2,
+        0,
+        10800,
+        5600
+      ],
+      "capsSource": "official",
+      "official": "yes",
+      "excel": "2026-102075.xlsx",
+      "sources": [
+        {
+          "title": "国民健康保険税の課税について",
+          "url": "https://www.city.tatebayashi.gunma.jp/s052/kenko/070/005/010/20240226142528.html"
+        },
+        {
+          "title": "国民健康保険税の試算シュミレーション（Excel）",
+          "url": "https://www.city.tatebayashi.gunma.jp/s052/kenko/070/005/030/20240226151058.html"
+        }
+      ],
+      "notes": [],
+      "excelVerified": true,
+      "caveats": [
+        "MUNICIPAL_EXCEL_DIFFERS"
+      ],
+      "pageNotes": [
+        "館林市の試算表（Excel）は、給与所得控除が改正前（令和6年分まで）の額で計算されています。給与収入が190万円未満の人がいる世帯では、この計算機の方が低い額になります（この計算機は令和7年分の控除で計算しています）。"
+      ]
+    },
+    {
+      "code": "102083",
+      "name": "渋川市",
+      "slug": "shibukawa",
+      "medical": [
+        7.7,
+        0,
+        26000,
+        24000
+      ],
+      "support": [
+        2.7,
+        0,
+        9000,
+        9000
+      ],
+      "care": [
+        2.1,
+        0,
+        10000,
+        7000
+      ],
+      "capsSource": "official",
+      "official": "yes",
+      "excel": null,
+      "sources": [
+        {
+          "title": "令和8年度 国民健康保険税の税率等について",
+          "url": "http://www.city.shibukawa.lg.jp/kurashi/000025/000028/p005613.html"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "code": "102091",
+      "name": "藤岡市",
+      "slug": "fujioka",
+      "medical": [
+        7.25,
+        0,
+        30700,
+        21300
+      ],
+      "support": [
+        2.91,
+        0,
+        11900,
+        8300
+      ],
+      "care": [
+        2.44,
+        0,
+        12600,
+        6400
+      ],
+      "capsSource": "official",
+      "official": "yes",
+      "excel": "2026-102091.xls",
+      "sources": [
+        {
+          "title": "国民健康保険税の概要",
+          "url": "https://www.city.fujioka.gunma.jp/soshiki/shiminbu/zeimu/9/5/2497.html"
+        },
+        {
+          "title": "国民健康保険税の試算（試算シートExcel）",
+          "url": "https://www.city.fujioka.gunma.jp/soshiki/shiminbu/zeimu/9/5/2496.html"
+        }
+      ],
+      "notes": [],
+      "excelVerified": true,
+      "caveats": [
+        "MUNICIPAL_EXCEL_DIFFERS"
+      ],
+      "pageNotes": [
+        "藤岡市の試算シート（Excel）は、課税限度額が改正前の額（医療分65万円・支援金分24万円）のままです。限度額に届く世帯では、この計算機の方が高い額になります（この計算機は市の税率ページの額 67万円・26万円で計算しています）。"
+      ]
+    },
+    {
+      "code": "102105",
+      "name": "富岡市",
+      "slug": "tomioka",
+      "medical": [
+        6.96,
+        0,
+        26000,
+        25000
+      ],
+      "support": [
+        2.98,
+        0,
+        11100,
+        9000
+      ],
+      "care": [
+        2.5,
+        0,
+        10700,
+        6800
+      ],
+      "capsSource": "official",
+      "official": "yes",
+      "excel": null,
+      "sources": [
+        {
+          "title": "国民健康保険税のしくみ",
+          "url": "https://www.city.tomioka.lg.jp/www/contents/1000000001379/index.html"
+        }
+      ],
+      "notes": [],
+      "officialExamples": 3
+    },
+    {
+      "code": "102113",
+      "name": "安中市",
+      "slug": "annaka",
+      "medical": [
+        6.7,
+        24,
+        24000,
+        23000
+      ],
+      "support": [
+        2,
+        9,
+        6000,
+        5000
+      ],
+      "care": [
+        1.2,
+        5,
+        6000,
+        4000
+      ],
+      "capsSource": "official",
+      "official": "yes",
+      "excel": null,
+      "sources": [
+        {
+          "title": "市税の種類・税率（国民健康保険税）",
+          "url": "https://www.city.annaka.lg.jp/page/2482.html"
+        }
+      ],
+      "notes": [
+        "資産割あり（固定資産税額のうち土地・家屋分に対して課税）"
+      ],
+      "pageNotes": [
+        "資産割があります。世帯の加入者の固定資産税額（土地・家屋分。都市計画税と償却資産分は除く）を入力してください。"
+      ]
+    },
+    {
+      "code": "102121",
+      "name": "みどり市",
+      "slug": "midori",
+      "medical": [
+        7.6,
+        0,
+        27600,
+        30000
+      ],
+      "support": [
+        2.7,
+        0,
+        9800,
+        8500
+      ],
+      "care": [
+        2.3,
+        0,
+        11600,
+        6000
+      ],
+      "capsSource": "official",
+      "official": "yes",
+      "excel": "2026-102121.xlsx",
+      "sources": [
+        {
+          "title": "国民健康保険税（計算例・試算シートExcel）",
+          "url": "https://www.city.midori.gunma.jp/kurashi/1001619/1001705/1002148.html"
+        }
+      ],
+      "notes": [],
+      "excelVerified": true,
+      "officialExamples": 1,
+      "caveats": [
+        "MUNICIPAL_EXCEL_DIFFERS"
+      ],
+      "pageNotes": [
+        "みどり市の試算シート（Excel）は、18歳未満の人の所得を子ども・子育て支援金分の所得割に含めていません。所得のある18歳未満の人がいる世帯では、この計算機の方が高い額になります。"
+      ]
+    },
+    {
+      "code": "103446",
+      "name": "榛東村",
+      "slug": "shinto",
+      "medical": [
+        6.52,
+        0,
+        22000,
+        19000
+      ],
+      "support": [
+        2.26,
+        0,
+        7900,
+        7000
+      ],
+      "care": [
+        1.92,
+        0,
+        8000,
+        5000
+      ],
+      "capsSource": "assumed",
+      "official": "no",
+      "excel": null,
+      "sources": [
+        {
+          "title": "国民健康保険",
+          "url": "https://www.vill.shinto.gunma.jp/life/000021/000032/p000194.html"
+        }
+      ],
+      "notes": [
+        "村のページに税率の掲載なし"
+      ]
+    },
+    {
+      "code": "103454",
+      "name": "吉岡町",
+      "slug": "yoshioka",
+      "medical": [
+        6.7,
+        0,
+        27400,
+        25800
+      ],
+      "support": [
+        2.2,
+        0,
+        8400,
+        9200
+      ],
+      "care": [
+        1.6,
+        0,
+        6700,
+        7600
+      ],
+      "capsSource": "assumed",
+      "official": "no",
+      "excel": null,
+      "sources": [],
+      "notes": [
+        "公式サイトに接続できず確認できない"
+      ]
+    },
+    {
+      "code": "103667",
+      "name": "上野村",
+      "slug": "ueno",
+      "medical": [
+        7.3,
+        0,
+        16800,
+        20000
+      ],
+      "support": [
+        1.5,
+        0,
+        4500,
+        4500
+      ],
+      "care": [
+        1.2,
+        0,
+        7000,
+        4000
+      ],
+      "capsSource": "assumed",
+      "official": "no",
+      "excel": null,
+      "sources": [],
+      "notes": [
+        "公式サイトに接続できず確認できない"
+      ]
+    },
+    {
+      "code": "103675",
+      "name": "神流町",
+      "slug": "kanna",
+      "medical": [
+        7,
+        0,
+        26000,
+        23000
+      ],
+      "support": [
+        2,
+        0,
+        11500,
+        6500
+      ],
+      "care": [
+        1.9,
+        0,
+        11000,
+        6000
+      ],
+      "capsSource": "official",
+      "official": "yes",
+      "excel": null,
+      "sources": [
+        {
+          "title": "国民健康保険税",
+          "url": "https://www.town.kanna.gunma.jp/soshiki/juminseikatsuka_kaikeishitsu/7/94.html"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "code": "103829",
+      "name": "下仁田町",
+      "slug": "shimonita",
+      "medical": [
+        6.65,
+        0,
+        27800,
+        22600
+      ],
+      "support": [
+        2.97,
+        0,
+        11900,
+        8300
+      ],
+      "care": [
+        2.51,
+        0,
+        12700,
+        6300
+      ],
+      "capsSource": "official",
+      "official": "yes",
+      "excel": null,
+      "sources": [
+        {
+          "title": "国民健康保険税・後期高齢者医療保険料",
+          "url": "https://www.town.shimonita.lg.jp/hukushi/m01/m02/m01/08.html"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "code": "103837",
+      "name": "南牧村",
+      "slug": "nanmoku",
+      "medical": [
+        6,
+        0,
+        17000,
+        15000
+      ],
+      "support": [
+        2,
+        0,
+        5000,
+        3000
+      ],
+      "care": [
+        1.5,
+        0,
+        6000,
+        3000
+      ],
+      "capsSource": "assumed",
+      "official": "no",
+      "excel": null,
+      "sources": [],
+      "notes": [
+        "公式サイトに接続できず確認できない"
+      ]
+    },
+    {
+      "code": "103845",
+      "name": "甘楽町",
+      "slug": "kanra",
+      "medical": [
+        7,
+        0,
+        25200,
+        20000
+      ],
+      "support": [
+        2.4,
+        0,
+        8000,
+        7400
+      ],
+      "care": [
+        1.8,
+        0,
+        8400,
+        5200
+      ],
+      "capsSource": "official",
+      "official": "yes",
+      "excel": null,
+      "sources": [
+        {
+          "title": "国民健康保険税",
+          "url": "https://www.town.kanra.lg.jp/jyuumin/jyuuminzei/news/20220803151928.html"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "code": "104213",
+      "name": "中之条町",
+      "slug": "nakanojo",
+      "medical": [
+        7,
+        0,
+        24000,
+        21200
+      ],
+      "support": [
+        2.8,
+        0,
+        9200,
+        8400
+      ],
+      "care": [
+        2.2,
+        0,
+        8500,
+        8000
+      ],
+      "capsSource": "official",
+      "official": "yes",
+      "excel": "2026-104213.xlsx",
+      "sources": [
+        {
+          "title": "国民健康保険税（国保税）について（試算Excel）",
+          "url": "https://www.town.nakanojo.gunma.jp/soshiki/3/13793.html"
+        }
+      ],
+      "notes": [],
+      "excelVerified": true,
+      "caveats": [
+        "MUNICIPAL_EXCEL_DIFFERS"
+      ],
+      "pageNotes": [
+        "中之条町の試算（Excel）とは、7割・5割・2割軽減の判定、未就学児の後期高齢者支援金分の均等割軽減、18歳未満の人の所得の扱いが異なるため、結果が違うことがあります（この計算機は国の基準で計算しています）。"
+      ]
+    },
+    {
+      "code": "104248",
+      "name": "長野原町",
+      "slug": "naganohara",
+      "medical": [
+        6.67,
+        0,
+        28000,
+        20000
+      ],
+      "support": [
+        2.6,
+        0,
+        11000,
+        8000
+      ],
+      "care": [
+        2.34,
+        0,
+        13000,
+        7000
+      ],
+      "capsSource": "assumed",
+      "official": "no",
+      "excel": null,
+      "sources": [],
+      "notes": [
+        "国保税のページが見つからない"
+      ]
+    },
+    {
+      "code": "104256",
+      "name": "嬬恋村",
+      "slug": "tsumagoi",
+      "medical": [
+        5.8,
+        0,
+        27000,
+        27000
+      ],
+      "support": [
+        1.8,
+        0,
+        9000,
+        8000
+      ],
+      "care": [
+        1.7,
+        0,
+        10000,
+        8000
+      ],
+      "capsSource": "assumed",
+      "official": "partial",
+      "excel": null,
+      "sources": [
+        {
+          "title": "国民健康保険税",
+          "url": "https://www.vill.tsumagoi.gunma.jp/www/contents/1000000000055/index.html"
+        }
+      ],
+      "notes": [
+        "令和8年度の税率は広報PDFに掲載（本文に限度額の記載なし）"
+      ]
+    },
+    {
+      "code": "104264",
+      "name": "草津町",
+      "slug": "kusatsu",
+      "medical": [
+        7.3,
+        0,
+        25000,
+        30000
+      ],
+      "support": [
+        2.2,
+        0,
+        7200,
+        8200
+      ],
+      "care": [
+        1.9,
+        0,
+        8000,
+        9000
+      ],
+      "capsSource": "assumed",
+      "official": "no",
+      "excel": null,
+      "sources": [],
+      "notes": [
+        "国保税のページが見つからない。例規集の限度額（医療66万円）は改正前の可能性"
+      ]
+    },
+    {
+      "code": "104281",
+      "name": "高山村",
+      "slug": "takayama",
+      "medical": [
+        6.3,
+        0,
+        25000,
+        28000
+      ],
+      "support": [
+        2.6,
+        0,
+        9500,
+        10600
+      ],
+      "care": [
+        1.9,
+        0,
+        8500,
+        9500
+      ],
+      "capsSource": "assumed",
+      "official": "no",
+      "excel": null,
+      "sources": [],
+      "notes": [
+        "国保税のページが見つからない"
+      ]
+    },
+    {
+      "code": "104299",
+      "name": "東吾妻町",
+      "slug": "higashiagatsuma",
+      "medical": [
+        7.2,
+        0,
+        32100,
+        21400
+      ],
+      "support": [
+        3,
+        0,
+        12000,
+        8000
+      ],
+      "care": [
+        2.45,
+        0,
+        12000,
+        8000
+      ],
+      "capsSource": "official",
+      "official": "yes",
+      "excel": null,
+      "sources": [
+        {
+          "title": "東吾妻町の国民健康保険税の算出方法",
+          "url": "https://www.town.higashiagatsuma.gunma.jp/www/contents/1425610034108/index.html"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "code": "104434",
+      "name": "片品村",
+      "slug": "katashina",
+      "medical": [
+        7.2,
+        0,
+        22000,
+        30000
+      ],
+      "support": [
+        3.2,
+        0,
+        7000,
+        9000
+      ],
+      "care": [
+        3,
+        0,
+        7000,
+        7200
+      ],
+      "capsSource": "official",
+      "official": "yes",
+      "excel": null,
+      "sources": [
+        {
+          "title": "国民健康保険税",
+          "url": "https://www.vill.katashina.gunma.jp/gaiyou/kakuka/jyumin/zyuuminzei/2016-1209-1640-38.html"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "code": "104442",
+      "name": "川場村",
+      "slug": "kawaba",
+      "medical": [
+        7,
+        0,
+        30300,
+        29000
+      ],
+      "support": [
+        2.3,
+        0,
+        10800,
+        9600
+      ],
+      "care": [
+        2.2,
+        0,
+        13100,
+        10000
+      ],
+      "capsSource": "official",
+      "official": "yes",
+      "excel": null,
+      "sources": [
+        {
+          "title": "国民健康保険税（国保税）",
+          "url": "https://www.vill.kawaba.gunma.jp/kurashi/tetsuzuki/nenkin/kokuhozei.html"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "code": "104485",
+      "name": "昭和村",
+      "slug": "showa",
+      "medical": [
+        6.9,
+        5,
+        23500,
+        26000
+      ],
+      "support": [
+        2.7,
+        5,
+        10500,
+        10500
+      ],
+      "care": [
+        1.9,
+        4,
+        9000,
+        9000
+      ],
+      "capsSource": "assumed",
+      "official": "no",
+      "excel": null,
+      "sources": [],
+      "notes": [
+        "国保税のページが見つからない",
+        "資産割あり（固定資産税額のうち土地・家屋分に対して課税）"
+      ],
+      "pageNotes": [
+        "資産割があります。世帯の加入者の固定資産税額（土地・家屋分。都市計画税と償却資産分は除く）を入力してください。"
+      ]
+    },
+    {
+      "code": "104493",
+      "name": "みなかみ町",
+      "slug": "minakami",
+      "medical": [
+        6.6,
+        0,
+        26000,
+        19000
+      ],
+      "support": [
+        2.4,
+        0,
+        9700,
+        7000
+      ],
+      "care": [
+        1.8,
+        0,
+        9500,
+        4500
+      ],
+      "capsSource": "official",
+      "official": "yes",
+      "excel": null,
+      "sources": [
+        {
+          "title": "国民健康保険税",
+          "url": "https://www.town.minakami.gunma.jp/life/02zeikin/2016-1013-2120-12.html"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "code": "104647",
+      "name": "玉村町",
+      "slug": "tamamura",
+      "medical": [
+        7,
+        0,
+        29500,
+        23000
+      ],
+      "support": [
+        3,
+        0,
+        11500,
+        9000
+      ],
+      "care": [
+        2.7,
+        0,
+        10000,
+        8000
+      ],
+      "capsSource": "official",
+      "official": "yes",
+      "excel": null,
+      "sources": [
+        {
+          "title": "国民健康保険税",
+          "url": "https://www.town.tamamura.lg.jp/docs/2024032600036/"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "code": "105210",
+      "name": "板倉町",
+      "slug": "itakura",
+      "medical": [
+        6.2,
+        0,
+        29000,
+        25000
+      ],
+      "support": [
+        2.5,
+        0,
+        11000,
+        10000
+      ],
+      "care": [
+        2.2,
+        0,
+        12000,
+        7000
+      ],
+      "capsSource": "official",
+      "official": "yes",
+      "excel": "2026-105210.xlsx",
+      "sources": [
+        {
+          "title": "国民健康保険税（計算シートExcel）",
+          "url": "https://www.town.itakura.gunma.jp/cont/s006000/d006010/20121219180648.html"
+        }
+      ],
+      "notes": [],
+      "excelVerified": true,
+      "caveats": [
+        "MUNICIPAL_EXCEL_DIFFERS"
+      ],
+      "pageNotes": [
+        "板倉町の計算シート（Excel）は、給与所得者等がいない世帯の軽減判定の基準額を10万円低く計算しています。該当する世帯では、この計算機の方が軽減が大きくなることがあります（この計算機は国の基準で判定しています）。"
+      ]
+    },
+    {
+      "code": "105228",
+      "name": "明和町",
+      "slug": "meiwa",
+      "medical": [
+        7,
+        0,
+        28000,
+        21800
+      ],
+      "support": [
+        1.8,
+        0,
+        9600,
+        7600
+      ],
+      "care": [
+        1.3,
+        0,
+        7900,
+        6200
+      ],
+      "capsSource": "official",
+      "official": "yes",
+      "excel": null,
+      "sources": [
+        {
+          "title": "国民健康保険税について",
+          "url": "https://www.town.meiwa.gunma.jp/life/soshiki/zeimu/kokuho/5722.html"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "code": "105236",
+      "name": "千代田町",
+      "slug": "chiyoda",
+      "medical": [
+        6.5,
+        0,
+        27000,
+        27700
+      ],
+      "support": [
+        2.6,
+        0,
+        10500,
+        7900
+      ],
+      "care": [
+        2.15,
+        0,
+        10900,
+        7000
+      ],
+      "capsSource": "official",
+      "official": "yes",
+      "excel": null,
+      "sources": [
+        {
+          "title": "国民健康保険税のしくみ",
+          "url": "https://www.town.chiyoda.gunma.jp/zeimukaikei/kotei/kotei007.html"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "code": "105244",
+      "name": "大泉町",
+      "slug": "oizumi",
+      "medical": [
+        7.25,
+        0,
+        29500,
+        22000
+      ],
+      "support": [
+        2.7,
+        0,
+        11600,
+        9500
+      ],
+      "care": [
+        1.6,
+        0,
+        9700,
+        7000
+      ],
+      "capsSource": "official",
+      "official": "yes",
+      "excel": null,
+      "sources": [
+        {
+          "title": "国民健康保険税",
+          "url": "https://www.town.oizumi.gunma.jp/s009/kurashi/020/020/040/20200806163623.html"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "code": "105252",
+      "name": "邑楽町",
+      "slug": "ora",
+      "medical": [
+        7.2,
+        0,
+        24000,
+        22000
+      ],
+      "support": [
+        2.8,
+        0,
+        9000,
+        6000
+      ],
+      "care": [
+        1.8,
+        0,
+        9000,
+        6000
+      ],
+      "capsSource": "official",
+      "official": "yes",
+      "excel": null,
+      "sources": [
+        {
+          "title": "国民健康保険税の計算方法",
+          "url": "https://www.town.ora.gunma.jp/s011/020/040/010/010/kokuho_keisanhouhou.html"
+        }
+      ],
+      "notes": []
+    }
+  ]
+}

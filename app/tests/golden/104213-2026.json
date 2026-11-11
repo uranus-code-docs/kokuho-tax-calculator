@@ -1,0 +1,5028 @@
+{
+ "meta": {
+  "source": "2026-104213.xlsx",
+  "sha256": "8a2ccc065d7a8b07c95d61ecae57caa97341863ec88b08c67aa3978e3e3c1745",
+  "generatedBy": "tools/gunma/gen-golden.mjs",
+  "engine": "LibreOffice",
+  "count": 150,
+  "domain": {
+   "reduction": true,
+   "preschool": true,
+   "under18": true,
+   "salaryPension": true,
+   "maxMembers": 6
+  }
+ },
+ "cases": [
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1984-10-15",
+      "salaryIncome": 2371682,
+      "otherIncome": 958341
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1967-10-15",
+      "salaryIncome": 1134827,
+      "otherIncome": 2497463
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 443200,
+    "support": 175600,
+    "care": 127400,
+    "child": 17300,
+    "total": 763500,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1987-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2020-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 31500,
+    "support": 13500,
+    "care": 0,
+    "child": 600,
+    "total": 45600,
+    "excelReductionRate": 0.7
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1987-10-15",
+      "salaryIncome": 2432001,
+      "otherIncome": 2289160
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1992-10-15",
+      "salaryIncome": 1692092
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15",
+      "salaryIncome": 2050511
+     }
+    ]
+   },
+   "expected": {
+    "medical": 480400,
+    "support": 194800,
+    "care": 0,
+    "child": 15600,
+    "total": 690800,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1973-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2020-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 27900,
+    "support": 13500,
+    "care": 4900,
+    "child": 600,
+    "total": 46900,
+    "excelReductionRate": 0.7
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1987-10-15",
+      "salaryIncome": 2200756,
+      "otherIncome": 877055
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1984-10-15",
+      "salaryIncome": 4355615
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1973-10-15",
+      "salaryIncome": 2036279
+     }
+    ]
+   },
+   "expected": {
+    "medical": 473500,
+    "support": 188100,
+    "care": 102500,
+    "child": 21000,
+    "total": 785100,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1984-10-15",
+      "salaryIncome": 2219949
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15",
+      "salaryIncome": 2608029
+     }
+    ]
+   },
+   "expected": {
+    "medical": 258100,
+    "support": 101900,
+    "care": 39400,
+    "child": 5200,
+    "total": 404600,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1963-10-15",
+      "pensionIncome": 132162
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1984-10-15",
+      "salaryIncome": 135742
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1973-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 27900,
+    "support": 10800,
+    "care": 10000,
+    "child": 1400,
+    "total": 50100,
+    "excelReductionRate": 0.7
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1980-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2025-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 24300,
+    "support": 10800,
+    "care": 4900,
+    "child": 600,
+    "total": 40600,
+    "excelReductionRate": 0.7
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1967-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1957-10-15",
+      "pensionIncome": 2565446
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 137400,
+    "support": 57700,
+    "care": 13200,
+    "child": 5800,
+    "total": 214100,
+    "excelReductionRate": 0.2
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "2000-10-15",
+      "salaryIncome": 2202508,
+      "otherIncome": 9564736
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1973-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2020-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 16500,
+    "child": 30000,
+    "total": 976500,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1992-10-15",
+      "salaryIncome": 5850516,
+      "otherIncome": 1521280
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 490200,
+    "support": 194400,
+    "care": 0,
+    "child": 18000,
+    "total": 702600,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1953-10-15",
+      "pensionIncome": 14481,
+      "otherIncome": 1536699
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1955-10-15",
+      "pensionIncome": 409476
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2020-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 161600,
+    "support": 74500,
+    "care": 0,
+    "child": 6000,
+    "total": 242100,
+    "excelReductionRate": 0.2
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1967-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1992-10-15",
+      "salaryIncome": 5758524
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1953-10-15",
+      "pensionIncome": 178591
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2020-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 366600,
+    "support": 149700,
+    "care": 16500,
+    "child": 15900,
+    "total": 548700,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1984-10-15",
+      "salaryIncome": 905161
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1963-10-15",
+      "salaryIncome": 1013579
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2000-10-15",
+      "salaryIncome": 2216640
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 166600,
+    "support": 65300,
+    "care": 20000,
+    "child": 6800,
+    "total": 258700,
+    "excelReductionRate": 0.2
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1992-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1957-10-15",
+      "pensionIncome": 2780338,
+      "otherIncome": 45213
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2025-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 155600,
+    "support": 65000,
+    "care": 0,
+    "child": 6600,
+    "total": 227200,
+    "excelReductionRate": 0.2
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "2005-10-15",
+      "salaryIncome": 3238462
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1980-10-15",
+      "otherIncome": 577575
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1959-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 250300,
+    "support": 98400,
+    "care": 19700,
+    "child": 10400,
+    "total": 378800,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1980-10-15",
+      "salaryIncome": 20546
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1963-10-15",
+      "pensionIncome": 354716,
+      "salaryIncome": 208259
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1959-10-15",
+      "pensionIncome": 208797,
+      "salaryIncome": 459203,
+      "otherIncome": 294258
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2020-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 64600,
+    "support": 27200,
+    "care": 12500,
+    "child": 2300,
+    "total": 106600,
+    "excelReductionRate": 0.5
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1957-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2020-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 27900,
+    "support": 13500,
+    "care": 0,
+    "child": 600,
+    "total": 42000,
+    "excelReductionRate": 0.7
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1984-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 27900,
+    "support": 10800,
+    "care": 4900,
+    "child": 600,
+    "total": 44200,
+    "excelReductionRate": 0.7
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "2000-10-15",
+      "salaryIncome": 2719245,
+      "otherIncome": 8085581
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 0,
+    "child": 30000,
+    "total": 960000,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1955-10-15",
+      "pensionIncome": 1947640
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1980-10-15",
+      "salaryIncome": 2514654
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 219900,
+    "support": 90100,
+    "care": 40600,
+    "child": 7700,
+    "total": 358300,
+    "excelReductionRate": 0.2
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1955-10-15",
+      "pensionIncome": 467123
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2000-10-15",
+      "salaryIncome": 1655085,
+      "otherIncome": 1119226
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 199800,
+    "support": 83400,
+    "care": 0,
+    "child": 8400,
+    "total": 291600,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1992-10-15",
+      "salaryIncome": 3944819
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2020-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 229100,
+    "support": 99900,
+    "care": 0,
+    "child": 8900,
+    "total": 337900,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1953-10-15",
+      "pensionIncome": 2798545,
+      "otherIncome": 2972557
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1963-10-15",
+      "pensionIncome": 2812427
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1984-10-15",
+      "salaryIncome": 5832406
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15",
+      "salaryIncome": 4971074,
+      "otherIncome": 1119947
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 139300,
+    "child": 30000,
+    "total": 1099300,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1953-10-15",
+      "pensionIncome": 854880
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1955-10-15",
+      "pensionIncome": 1388733
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2000-10-15",
+      "salaryIncome": 1674077
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 135300,
+    "support": 52700,
+    "care": 0,
+    "child": 5500,
+    "total": 193500,
+    "excelReductionRate": 0.2
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "2000-10-15",
+      "salaryIncome": 5078723,
+      "otherIncome": 1911435
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2025-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 450300,
+    "support": 188000,
+    "care": 0,
+    "child": 17400,
+    "total": 655700,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1959-10-15",
+      "pensionIncome": 300666
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 20700,
+    "support": 8000,
+    "care": 0,
+    "child": 600,
+    "total": 29300,
+    "excelReductionRate": 0.7
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1973-10-15",
+      "salaryIncome": 480477
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2005-10-15",
+      "salaryIncome": 122764
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2025-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 38700,
+    "support": 16300,
+    "care": 4900,
+    "child": 1000,
+    "total": 60900,
+    "excelReductionRate": 0.7
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1963-10-15",
+      "pensionIncome": 3021956
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1963-10-15",
+      "pensionIncome": 461027
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1957-10-15",
+      "salaryIncome": 8393440,
+      "otherIncome": 1384747
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2025-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 59300,
+    "child": 30000,
+    "total": 1019300,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1955-10-15",
+      "pensionIncome": 7489237,
+      "salaryIncome": 1894770,
+      "otherIncome": 9774397
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2020-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2020-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 0,
+    "child": 30000,
+    "total": 960000,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1973-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1959-10-15",
+      "pensionIncome": 953925
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2000-10-15",
+      "salaryIncome": 5710363
+     }
+    ]
+   },
+   "expected": {
+    "medical": 351900,
+    "support": 139400,
+    "care": 16500,
+    "child": 15700,
+    "total": 523500,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1987-10-15",
+      "salaryIncome": 5902745,
+      "otherIncome": 2879156
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1957-10-15",
+      "pensionIncome": 2954628
+     }
+    ]
+   },
+   "expected": {
+    "medical": 639900,
+    "support": 255100,
+    "care": 0,
+    "child": 27800,
+    "total": 922800,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1980-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 20700,
+    "support": 8000,
+    "care": 4900,
+    "child": 600,
+    "total": 34200,
+    "excelReductionRate": 0.7
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1980-10-15",
+      "salaryIncome": 148795,
+      "otherIncome": 2134753
+     }
+    ]
+   },
+   "expected": {
+    "medical": 164500,
+    "support": 65300,
+    "care": 54000,
+    "child": 7200,
+    "total": 291000,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "2005-10-15",
+      "salaryIncome": 242339
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1987-10-15",
+      "salaryIncome": 5307900,
+      "otherIncome": 2303500
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2020-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 514500,
+    "support": 213300,
+    "care": 0,
+    "child": 20400,
+    "total": 748200,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1963-10-15",
+      "pensionIncome": 2854766,
+      "salaryIncome": 2075256,
+      "otherIncome": 1958071
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1992-10-15",
+      "otherIncome": 184272
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2020-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 419700,
+    "support": 175800,
+    "care": 119100,
+    "child": 17300,
+    "total": 731900,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1967-10-15",
+      "salaryIncome": 178194
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1987-10-15",
+      "otherIncome": 64868
+     }
+    ]
+   },
+   "expected": {
+    "medical": 34600,
+    "support": 13400,
+    "care": 8200,
+    "child": 1700,
+    "total": 57900,
+    "excelReductionRate": 0.5
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "2005-10-15",
+      "salaryIncome": 656599
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15",
+      "salaryIncome": 591227
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 46600,
+    "support": 18000,
+    "care": 0,
+    "child": 1000,
+    "total": 65600,
+    "excelReductionRate": 0.5
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1953-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1992-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2005-10-15",
+      "salaryIncome": 4631779,
+      "otherIncome": 4602220
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15",
+      "salaryIncome": 3864417,
+      "otherIncome": 3500164
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 0,
+    "child": 27000,
+    "total": 957000,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1980-10-15",
+      "otherIncome": 9722612
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1987-10-15",
+      "salaryIncome": 2135483,
+      "otherIncome": 8928993
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15",
+      "otherIncome": 5087874
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 170000,
+    "child": 30000,
+    "total": 1130000,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1955-10-15",
+      "pensionIncome": 958487,
+      "otherIncome": 847198
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2005-10-15",
+      "salaryIncome": 4670849
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1963-10-15",
+      "pensionIncome": 372674,
+      "salaryIncome": 2260266
+     }
+    ]
+   },
+   "expected": {
+    "medical": 397900,
+    "support": 157900,
+    "care": 40000,
+    "child": 17700,
+    "total": 613500,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1967-10-15",
+      "salaryIncome": 2514641
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1955-10-15",
+      "pensionIncome": 1765174,
+      "salaryIncome": 3103600
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2025-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 336300,
+    "support": 142400,
+    "care": 43900,
+    "child": 13800,
+    "total": 536400,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1987-10-15",
+      "salaryIncome": 5282598
+     }
+    ]
+   },
+   "expected": {
+    "medical": 279900,
+    "support": 111500,
+    "care": 0,
+    "child": 12100,
+    "total": 403500,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1955-10-15",
+      "otherIncome": 2410945
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1963-10-15",
+      "pensionIncome": 86709,
+      "salaryIncome": 5118384,
+      "otherIncome": 340225
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2020-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 517200,
+    "support": 209600,
+    "care": 94800,
+    "child": 20000,
+    "total": 841600,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1980-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1992-10-15",
+      "salaryIncome": 5695741
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15",
+      "salaryIncome": 2443057
+     }
+    ]
+   },
+   "expected": {
+    "medical": 434900,
+    "support": 172600,
+    "care": 16500,
+    "child": 14400,
+    "total": 638400,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1953-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2020-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 20700,
+    "support": 10800,
+    "care": 0,
+    "child": 600,
+    "total": 32100,
+    "excelReductionRate": 0.7
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1955-10-15",
+      "pensionIncome": 163180
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2025-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 31500,
+    "support": 13500,
+    "care": 0,
+    "child": 600,
+    "total": 45600,
+    "excelReductionRate": 0.7
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "2000-10-15",
+      "salaryIncome": 577775,
+      "otherIncome": 81999
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 34600,
+    "support": 13400,
+    "care": 0,
+    "child": 1000,
+    "total": 49000,
+    "excelReductionRate": 0.5
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1987-10-15",
+      "salaryIncome": 4229998
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1984-10-15",
+      "salaryIncome": 5429248
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15",
+      "salaryIncome": 5216635
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 92800,
+    "child": 21300,
+    "total": 1044100,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1973-10-15",
+      "salaryIncome": 7015533,
+      "otherIncome": 8048385
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1973-10-15",
+      "salaryIncome": 6363231
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 170000,
+    "child": 30000,
+    "total": 1130000,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1980-10-15",
+      "salaryIncome": 2225688
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1959-10-15",
+      "pensionIncome": 3245929
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2025-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 296700,
+    "support": 120800,
+    "care": 36200,
+    "child": 11000,
+    "total": 464700,
+    "excelReductionRate": 0.2
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "2000-10-15",
+      "salaryIncome": 2104583,
+      "otherIncome": 1349448
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1987-10-15",
+      "salaryIncome": 3892017,
+      "otherIncome": 770176
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2025-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15",
+      "salaryIncome": 5077220
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 0,
+    "child": 19300,
+    "total": 949300,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1959-10-15",
+      "pensionIncome": 3148509,
+      "otherIncome": 2476744
+     }
+    ]
+   },
+   "expected": {
+    "medical": 331800,
+    "support": 132200,
+    "care": 0,
+    "child": 14300,
+    "total": 478300,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1980-10-15",
+      "salaryIncome": 5749752
+     }
+    ]
+   },
+   "expected": {
+    "medical": 306100,
+    "support": 121900,
+    "care": 98500,
+    "child": 13200,
+    "total": 539700,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1973-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1987-10-15",
+      "otherIncome": 869645
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1955-10-15",
+      "pensionIncome": 260703
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 143700,
+    "support": 55800,
+    "care": 13200,
+    "child": 5000,
+    "total": 217700,
+    "excelReductionRate": 0.2
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1992-10-15",
+      "salaryIncome": 1807310
+     }
+    ]
+   },
+   "expected": {
+    "medical": 96100,
+    "support": 37900,
+    "care": 0,
+    "child": 4200,
+    "total": 138200,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1953-10-15",
+      "pensionIncome": 50551
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 35100,
+    "support": 13500,
+    "care": 0,
+    "child": 600,
+    "total": 49200,
+    "excelReductionRate": 0.7
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1992-10-15",
+      "salaryIncome": 28373,
+      "otherIncome": 167633
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15",
+      "salaryIncome": 81483
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 46600,
+    "support": 18000,
+    "care": 0,
+    "child": 1000,
+    "total": 65600,
+    "excelReductionRate": 0.5
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1973-10-15",
+      "salaryIncome": 5088713,
+      "otherIncome": 522644
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1959-10-15",
+      "pensionIncome": 11187434
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1987-10-15",
+      "salaryIncome": 8033352
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 98400,
+    "child": 30000,
+    "total": 1058400,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1992-10-15",
+      "otherIncome": 8764612
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 652600,
+    "support": 260000,
+    "care": 0,
+    "child": 27100,
+    "total": 939700,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1959-10-15",
+      "pensionIncome": 2673740
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1967-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 193000,
+    "support": 75500,
+    "care": 13200,
+    "child": 6100,
+    "total": 287800,
+    "excelReductionRate": 0.2
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1959-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1967-10-15",
+      "salaryIncome": 2335135,
+      "otherIncome": 2694936
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1955-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 360400,
+    "support": 142800,
+    "care": 100400,
+    "child": 16100,
+    "total": 619700,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1957-10-15",
+      "pensionIncome": 2119941
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1955-10-15",
+      "salaryIncome": 3204391
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1955-10-15",
+      "pensionIncome": 2203373
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15",
+      "salaryIncome": 4690657
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 564500,
+    "support": 228100,
+    "care": 0,
+    "child": 13600,
+    "total": 806200,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1957-10-15",
+      "pensionIncome": 1760401,
+      "salaryIncome": 675227
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2005-10-15",
+      "salaryIncome": 1859412
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 145200,
+    "support": 64400,
+    "care": 0,
+    "child": 5700,
+    "total": 215300,
+    "excelReductionRate": 0.2
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1984-10-15",
+      "salaryIncome": 3462892
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1959-10-15",
+      "pensionIncome": 317962
+     }
+    ]
+   },
+   "expected": {
+    "medical": 203000,
+    "support": 80300,
+    "care": 58500,
+    "child": 9100,
+    "total": 350900,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1959-10-15",
+      "salaryIncome": 2908785
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2005-10-15",
+      "salaryIncome": 2539984,
+      "otherIncome": 2248814
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1959-10-15",
+      "pensionIncome": 15526,
+      "otherIncome": 1168185
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 509600,
+    "support": 206900,
+    "care": 0,
+    "child": 22000,
+    "total": 738500,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1963-10-15",
+      "pensionIncome": 97142,
+      "salaryIncome": 409135
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 20700,
+    "support": 8000,
+    "care": 4900,
+    "child": 600,
+    "total": 34200,
+    "excelReductionRate": 0.7
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1987-10-15",
+      "otherIncome": 254035
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2000-10-15",
+      "salaryIncome": 506158
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 64600,
+    "support": 27200,
+    "care": 0,
+    "child": 1700,
+    "total": 93500,
+    "excelReductionRate": 0.5
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1980-10-15",
+      "otherIncome": 6809201
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2000-10-15",
+      "salaryIncome": 5078246
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 156800,
+    "child": 30000,
+    "total": 1116800,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1957-10-15",
+      "otherIncome": 8670770
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2000-10-15",
+      "salaryIncome": 2993494
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1963-10-15",
+      "salaryIncome": 7287077
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 127100,
+    "child": 30000,
+    "total": 1087100,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1992-10-15",
+      "salaryIncome": 2496969
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2005-10-15",
+      "salaryIncome": 5287893
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2025-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2025-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 426800,
+    "support": 183000,
+    "care": 0,
+    "child": 17100,
+    "total": 626900,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1987-10-15",
+      "otherIncome": 2950356
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2000-10-15",
+      "salaryIncome": 5914790
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1959-10-15",
+      "pensionIncome": 2951241,
+      "otherIncome": 15979
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15",
+      "salaryIncome": 613287,
+      "otherIncome": 2266129
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2020-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 0,
+    "child": 28100,
+    "total": 958100,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1980-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1980-10-15",
+      "salaryIncome": 5566761,
+      "otherIncome": 1781768
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1987-10-15",
+      "salaryIncome": 1890495
+     }
+    ]
+   },
+   "expected": {
+    "medical": 525300,
+    "support": 208800,
+    "care": 142900,
+    "child": 23200,
+    "total": 900200,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1987-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1984-10-15",
+      "salaryIncome": 2517629,
+      "otherIncome": 1558795
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 280800,
+    "support": 122100,
+    "care": 75000,
+    "child": 11100,
+    "total": 489000,
+    "excelReductionRate": 0.2
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1953-10-15",
+      "pensionIncome": 1485085,
+      "otherIncome": 87676
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 37500,
+    "support": 14500,
+    "care": 0,
+    "child": 1100,
+    "total": 53100,
+    "excelReductionRate": 0.5
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1957-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 20700,
+    "support": 8000,
+    "care": 0,
+    "child": 600,
+    "total": 29300,
+    "excelReductionRate": 0.7
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "2000-10-15",
+      "salaryIncome": 108827
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1973-10-15",
+      "salaryIncome": 545622
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2025-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 27900,
+    "support": 13500,
+    "care": 4900,
+    "child": 1000,
+    "total": 47300,
+    "excelReductionRate": 0.7
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "2005-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 13500,
+    "support": 5200,
+    "care": 0,
+    "child": 600,
+    "total": 19300,
+    "excelReductionRate": 0.7
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "2005-10-15",
+      "salaryIncome": 6348547
+     }
+    ]
+   },
+   "expected": {
+    "medical": 339700,
+    "support": 135400,
+    "care": 0,
+    "child": 14700,
+    "total": 489800,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1957-10-15",
+      "otherIncome": 9636676
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1992-10-15",
+      "salaryIncome": 8339068,
+      "otherIncome": 4137677
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 0,
+    "child": 30000,
+    "total": 960000,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1980-10-15",
+      "salaryIncome": 4448466
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1984-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1957-10-15",
+      "pensionIncome": 1359723
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 301100,
+    "support": 126100,
+    "care": 79100,
+    "child": 11800,
+    "total": 518100,
+    "excelReductionRate": 0.2
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1955-10-15",
+      "pensionIncome": 254757,
+      "otherIncome": 1940397
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 161000,
+    "support": 71000,
+    "care": 0,
+    "child": 6200,
+    "total": 238200,
+    "excelReductionRate": 0.2
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1957-10-15",
+      "pensionIncome": 657469
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1984-10-15",
+      "salaryIncome": 4154380
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15",
+      "salaryIncome": 1955764,
+      "otherIncome": 1726120
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 493500,
+    "support": 195300,
+    "care": 70400,
+    "child": 10700,
+    "total": 769900,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1955-10-15",
+      "pensionIncome": 767650
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15",
+      "salaryIncome": 3852937,
+      "otherIncome": 1714441
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2025-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 356000,
+    "support": 145900,
+    "care": 0,
+    "child": 2100,
+    "total": 504000,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1973-10-15",
+      "salaryIncome": 4437947
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1955-10-15",
+      "pensionIncome": 485912,
+      "otherIncome": 2768671
+     }
+    ]
+   },
+   "expected": {
+    "medical": 420400,
+    "support": 167200,
+    "care": 75400,
+    "child": 18400,
+    "total": 681400,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1967-10-15",
+      "salaryIncome": 1400442
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 106500,
+    "support": 45100,
+    "care": 20200,
+    "child": 2600,
+    "total": 174400,
+    "excelReductionRate": 0.2
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1967-10-15",
+      "salaryIncome": 56061
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1955-10-15",
+      "pensionIncome": 144573
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 35100,
+    "support": 13500,
+    "care": 4900,
+    "child": 1000,
+    "total": 54500,
+    "excelReductionRate": 0.7
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1984-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1987-10-15",
+      "salaryIncome": 604225
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2020-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 40600,
+    "support": 18000,
+    "care": 8200,
+    "child": 1700,
+    "total": 68500,
+    "excelReductionRate": 0.5
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1963-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2005-10-15",
+      "salaryIncome": 7665866
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1967-10-15",
+      "salaryIncome": 1555458
+     }
+    ]
+   },
+   "expected": {
+    "medical": 502300,
+    "support": 199600,
+    "care": 35400,
+    "child": 22200,
+    "total": 759500,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "2005-10-15",
+      "salaryIncome": 6054612,
+      "otherIncome": 8189394
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2020-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 0,
+    "child": 30000,
+    "total": 960000,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1992-10-15",
+      "salaryIncome": 138596
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1984-10-15",
+      "salaryIncome": 5513943,
+      "otherIncome": 1624847
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15",
+      "salaryIncome": 3398831,
+      "otherIncome": 758038
+     }
+    ]
+   },
+   "expected": {
+    "medical": 638400,
+    "support": 254100,
+    "care": 130100,
+    "child": 18800,
+    "total": 1041400,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "2000-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 31500,
+    "support": 13500,
+    "care": 0,
+    "child": 600,
+    "total": 45600,
+    "excelReductionRate": 0.7
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1980-10-15",
+      "salaryIncome": 2509963
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15",
+      "otherIncome": 11195
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 171300,
+    "support": 71000,
+    "care": 40600,
+    "child": 5400,
+    "total": 288300,
+    "excelReductionRate": 0.2
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "2005-10-15",
+      "salaryIncome": 786240
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1987-10-15",
+      "salaryIncome": 2063742
+     }
+    ]
+   },
+   "expected": {
+    "medical": 120600,
+    "support": 47500,
+    "care": 0,
+    "child": 5500,
+    "total": 173600,
+    "excelReductionRate": 0.2
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1980-10-15",
+      "salaryIncome": 5806910
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2000-10-15",
+      "otherIncome": 2129405
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1959-10-15",
+      "pensionIncome": 3283302
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2025-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15",
+      "salaryIncome": 3840116
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 99500,
+    "child": 26300,
+    "total": 1055800,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1963-10-15",
+      "pensionIncome": 1529199,
+      "salaryIncome": 5609733,
+      "otherIncome": 1363022
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 483700,
+    "support": 197000,
+    "care": 143000,
+    "child": 19300,
+    "total": 843000,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1987-10-15",
+      "salaryIncome": 703285
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2000-10-15",
+      "salaryIncome": 576
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1963-10-15",
+      "pensionIncome": 42754
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15",
+      "salaryIncome": 544006
+     }
+    ]
+   },
+   "expected": {
+    "medical": 70600,
+    "support": 27200,
+    "care": 8200,
+    "child": 2300,
+    "total": 108300,
+    "excelReductionRate": 0.5
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1963-10-15",
+      "pensionIncome": 146830,
+      "salaryIncome": 495644
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1957-10-15",
+      "pensionIncome": 27773
+     }
+    ]
+   },
+   "expected": {
+    "medical": 20700,
+    "support": 8000,
+    "care": 4900,
+    "child": 1000,
+    "total": 34600,
+    "excelReductionRate": 0.7
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1987-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1973-10-15",
+      "salaryIncome": 2969124
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1980-10-15",
+      "salaryIncome": 5744175,
+      "otherIncome": 11058608
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 170000,
+    "child": 30000,
+    "total": 1130000,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1967-10-15",
+      "salaryIncome": 7900396,
+      "otherIncome": 8445603
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 170000,
+    "child": 30000,
+    "total": 1130000,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1973-10-15",
+      "salaryIncome": 4577706
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1963-10-15",
+      "pensionIncome": 2085643,
+      "salaryIncome": 2616928
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1987-10-15",
+      "salaryIncome": 5706996
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15",
+      "salaryIncome": 2067799
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 141600,
+    "child": 30000,
+    "total": 1101600,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1980-10-15",
+      "salaryIncome": 2740101,
+      "otherIncome": 1527447
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2025-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 310600,
+    "support": 127300,
+    "care": 81000,
+    "child": 10900,
+    "total": 529800,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1953-10-15",
+      "pensionIncome": 3492164
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2005-10-15",
+      "salaryIncome": 1567217
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1967-10-15",
+      "salaryIncome": 1002233
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2020-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 273200,
+    "support": 112400,
+    "care": 16500,
+    "child": 11900,
+    "total": 414000,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1980-10-15",
+      "salaryIncome": 1271318,
+      "otherIncome": 2232812
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2005-10-15",
+      "salaryIncome": 5156699,
+      "otherIncome": 302105
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2025-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 535800,
+    "support": 221800,
+    "care": 69800,
+    "child": 21300,
+    "total": 848700,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1973-10-15",
+      "salaryIncome": 4480383
+     }
+    ]
+   },
+   "expected": {
+    "medical": 235100,
+    "support": 93500,
+    "care": 76200,
+    "child": 10200,
+    "total": 415000,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1987-10-15",
+      "salaryIncome": 4173795,
+      "otherIncome": 2873427
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1973-10-15",
+      "salaryIncome": 299629
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2025-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2020-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 491000,
+    "support": 203900,
+    "care": 16500,
+    "child": 19400,
+    "total": 730800,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1953-10-15",
+      "pensionIncome": 39237
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1992-10-15",
+      "salaryIncome": 401398,
+      "otherIncome": 65642
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2005-10-15",
+      "salaryIncome": 77031
+     }
+    ]
+   },
+   "expected": {
+    "medical": 46600,
+    "support": 18000,
+    "care": 0,
+    "child": 2300,
+    "total": 66900,
+    "excelReductionRate": 0.5
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1955-10-15",
+      "salaryIncome": 303611
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 20700,
+    "support": 8000,
+    "care": 0,
+    "child": 600,
+    "total": 29300,
+    "excelReductionRate": 0.7
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1984-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2005-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 20700,
+    "support": 8000,
+    "care": 4900,
+    "child": 1000,
+    "total": 34600,
+    "excelReductionRate": 0.7
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1992-10-15",
+      "salaryIncome": 7795426,
+      "otherIncome": 9462921
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1955-10-15",
+      "pensionIncome": 8325233,
+      "otherIncome": 1335830
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15",
+      "salaryIncome": 4661180,
+      "otherIncome": 9057029
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 0,
+    "child": 30000,
+    "total": 960000,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1984-10-15",
+      "salaryIncome": 2882621,
+      "otherIncome": 1091190
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1953-10-15",
+      "pensionIncome": 2083319
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1967-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 313700,
+    "support": 124200,
+    "care": 82100,
+    "child": 14100,
+    "total": 534100,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1955-10-15",
+      "pensionIncome": 2102413,
+      "salaryIncome": 4372882
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1959-10-15",
+      "pensionIncome": 2114286
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1959-10-15",
+      "pensionIncome": 775175
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2025-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 393200,
+    "support": 160400,
+    "care": 0,
+    "child": 17000,
+    "total": 570600,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1987-10-15",
+      "salaryIncome": 3234956
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1973-10-15",
+      "salaryIncome": 5671678
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2005-10-15",
+      "salaryIncome": 3212715
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2025-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2020-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 642000,
+    "support": 260000,
+    "care": 97100,
+    "child": 26100,
+    "total": 1025200,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1987-10-15",
+      "salaryIncome": 2565825,
+      "otherIncome": 1080669
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2005-10-15",
+      "salaryIncome": 484904,
+      "otherIncome": 2253589
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1980-10-15",
+      "salaryIncome": 377843
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2025-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 422400,
+    "support": 171600,
+    "care": 16500,
+    "child": 17200,
+    "total": 627700,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1967-10-15",
+      "salaryIncome": 4153867
+     }
+    ]
+   },
+   "expected": {
+    "medical": 216800,
+    "support": 86200,
+    "care": 70400,
+    "child": 9400,
+    "total": 382800,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1980-10-15",
+      "salaryIncome": 2756434,
+      "otherIncome": 2789989
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1957-10-15",
+      "pensionIncome": 3101047
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1984-10-15",
+      "salaryIncome": 5865794
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2025-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 170000,
+    "child": 30000,
+    "total": 1130000,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1955-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1967-10-15",
+      "salaryIncome": 251186
+     }
+    ]
+   },
+   "expected": {
+    "medical": 20700,
+    "support": 8000,
+    "care": 4900,
+    "child": 1000,
+    "total": 34600,
+    "excelReductionRate": 0.7
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1980-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 20700,
+    "support": 8000,
+    "care": 4900,
+    "child": 600,
+    "total": 34200,
+    "excelReductionRate": 0.7
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1955-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1987-10-15",
+      "salaryIncome": 4022921
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1959-10-15",
+      "pensionIncome": 7652539
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15",
+      "salaryIncome": 695268,
+      "otherIncome": 2310118
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 0,
+    "child": 27900,
+    "total": 957900,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1987-10-15",
+      "salaryIncome": 6416993,
+      "otherIncome": 8107249
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15",
+      "salaryIncome": 3123206
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 0,
+    "child": 30000,
+    "total": 960000,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1959-10-15",
+      "pensionIncome": 763256
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 27900,
+    "support": 10800,
+    "care": 0,
+    "child": 600,
+    "total": 39300,
+    "excelReductionRate": 0.7
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "2005-10-15",
+      "salaryIncome": 1303218
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1957-10-15",
+      "pensionIncome": 3152867
+     }
+    ]
+   },
+   "expected": {
+    "medical": 198400,
+    "support": 78400,
+    "care": 0,
+    "child": 8900,
+    "total": 285700,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1967-10-15",
+      "salaryIncome": 3822021
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2020-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 217900,
+    "support": 97300,
+    "care": 61200,
+    "child": 8200,
+    "total": 384600,
+    "excelReductionRate": 0.2
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1953-10-15",
+      "pensionIncome": 2477452,
+      "otherIncome": 1232027
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1959-10-15",
+      "pensionIncome": 2256492
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1955-10-15",
+      "pensionIncome": 80581
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 316300,
+    "support": 124800,
+    "care": 0,
+    "child": 12400,
+    "total": 453500,
+    "excelReductionRate": 0.2
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1987-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1957-10-15",
+      "pensionIncome": 1644519
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2020-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 54600,
+    "support": 25800,
+    "care": 0,
+    "child": 2000,
+    "total": 82400,
+    "excelReductionRate": 0.5
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1959-10-15",
+      "pensionIncome": 641553
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 35100,
+    "support": 13500,
+    "care": 0,
+    "child": 600,
+    "total": 49200,
+    "excelReductionRate": 0.7
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1963-10-15",
+      "pensionIncome": 113304,
+      "salaryIncome": 243419
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1992-10-15",
+      "salaryIncome": 243797
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2025-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15",
+      "otherIncome": 262004
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 64600,
+    "support": 27200,
+    "care": 8200,
+    "child": 1700,
+    "total": 101700,
+    "excelReductionRate": 0.5
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "2000-10-15",
+      "salaryIncome": 690824,
+      "otherIncome": 51820
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 34600,
+    "support": 13400,
+    "care": 0,
+    "child": 1000,
+    "total": 49000,
+    "excelReductionRate": 0.5
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "2005-10-15",
+      "salaryIncome": 6183550
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1957-10-15",
+      "pensionIncome": 7141325,
+      "salaryIncome": 6472300,
+      "otherIncome": 11516079
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2000-10-15",
+      "salaryIncome": 6233230
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2025-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 0,
+    "child": 30000,
+    "total": 960000,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1984-10-15",
+      "salaryIncome": 2352375,
+      "otherIncome": 9621459
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1987-10-15",
+      "salaryIncome": 4779627
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 170000,
+    "child": 30000,
+    "total": 1130000,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "2000-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1987-10-15",
+      "salaryIncome": 1104728
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1963-10-15",
+      "pensionIncome": 3079619,
+      "salaryIncome": 1840497
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2020-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 319500,
+    "support": 130500,
+    "care": 75700,
+    "child": 12800,
+    "total": 538500,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1953-10-15",
+      "pensionIncome": 319153
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1959-10-15",
+      "pensionIncome": 2882114
+     }
+    ]
+   },
+   "expected": {
+    "medical": 150000,
+    "support": 59200,
+    "care": 0,
+    "child": 6700,
+    "total": 215900,
+    "excelReductionRate": 0.2
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "2005-10-15",
+      "salaryIncome": 5642416
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15",
+      "salaryIncome": 65756,
+      "otherIncome": 301654
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2025-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 348100,
+    "support": 147100,
+    "care": 0,
+    "child": 13000,
+    "total": 508200,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1953-10-15",
+      "salaryIncome": 5610230,
+      "otherIncome": 205122
+     }
+    ]
+   },
+   "expected": {
+    "medical": 312700,
+    "support": 124600,
+    "care": 0,
+    "child": 13500,
+    "total": 450800,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1959-10-15",
+      "pensionIncome": 2959492,
+      "salaryIncome": 1528415,
+      "otherIncome": 905356
+     }
+    ]
+   },
+   "expected": {
+    "medical": 263100,
+    "support": 104700,
+    "care": 0,
+    "child": 11400,
+    "total": 379200,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1963-10-15",
+      "salaryIncome": 5365308,
+      "otherIncome": 2533332
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 486000,
+    "support": 193500,
+    "care": 147400,
+    "child": 19900,
+    "total": 846800,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1987-10-15",
+      "otherIncome": 6549
+     }
+    ]
+   },
+   "expected": {
+    "medical": 22600,
+    "support": 8800,
+    "care": 0,
+    "child": 1000,
+    "total": 32400,
+    "excelReductionRate": 0.5
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1953-10-15",
+      "pensionIncome": 408045
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1987-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 20700,
+    "support": 8000,
+    "care": 0,
+    "child": 1000,
+    "total": 29700,
+    "excelReductionRate": 0.7
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "2005-10-15",
+      "salaryIncome": 8321398
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1953-10-15",
+      "pensionIncome": 6662655,
+      "otherIncome": 9489446
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1992-10-15",
+      "salaryIncome": 2890458
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 0,
+    "child": 30000,
+    "total": 960000,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1959-10-15",
+      "salaryIncome": 3546932,
+      "otherIncome": 9413594
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2020-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 0,
+    "child": 30000,
+    "total": 960000,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1987-10-15",
+      "salaryIncome": 5474416
+     }
+    ]
+   },
+   "expected": {
+    "medical": 290700,
+    "support": 115800,
+    "care": 0,
+    "child": 12600,
+    "total": 419100,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "2000-10-15",
+      "salaryIncome": 4157617,
+      "otherIncome": 600417
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1973-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2025-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15",
+      "salaryIncome": 1217507
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2010-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 352600,
+    "support": 143700,
+    "care": 16500,
+    "child": 12500,
+    "total": 525300,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1992-10-15",
+      "salaryIncome": 1450968
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 90900,
+    "support": 39100,
+    "care": 0,
+    "child": 2700,
+    "total": 132700,
+    "excelReductionRate": 0.2
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "2000-10-15",
+      "salaryIncome": 5212394
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1980-10-15",
+      "salaryIncome": 90947,
+      "otherIncome": 991001
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1967-10-15",
+      "salaryIncome": 625193,
+      "otherIncome": 1271927
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15",
+      "salaryIncome": 1842114,
+      "otherIncome": 1026494
+     }
+    ]
+   },
+   "expected": {
+    "medical": 571500,
+    "support": 226900,
+    "care": 55800,
+    "child": 18800,
+    "total": 873000,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1963-10-15",
+      "pensionIncome": 1561459,
+      "salaryIncome": 1598360
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1967-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2000-10-15",
+      "salaryIncome": 1974640
+     }
+    ]
+   },
+   "expected": {
+    "medical": 246100,
+    "support": 97100,
+    "care": 53900,
+    "child": 11200,
+    "total": 408300,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1953-10-15",
+      "otherIncome": 353861
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1955-10-15",
+      "pensionIncome": 220974
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1959-10-15",
+      "pensionIncome": 1652054
+     }
+    ]
+   },
+   "expected": {
+    "medical": 83100,
+    "support": 32200,
+    "care": 0,
+    "child": 4100,
+    "total": 119400,
+    "excelReductionRate": 0.2
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1963-10-15",
+      "otherIncome": 328334
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2005-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15",
+      "salaryIncome": 414003
+     }
+    ]
+   },
+   "expected": {
+    "medical": 64600,
+    "support": 27200,
+    "care": 8200,
+    "child": 1700,
+    "total": 101700,
+    "excelReductionRate": 0.5
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "2000-10-15",
+      "salaryIncome": 335015,
+      "otherIncome": 348954
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1957-10-15",
+      "pensionIncome": 132028,
+      "otherIncome": 146461
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2000-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2009-10-15",
+      "salaryIncome": 56849
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 132100,
+    "support": 50800,
+    "care": 0,
+    "child": 3700,
+    "total": 186600,
+    "excelReductionRate": 0.2
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1967-10-15",
+      "salaryIncome": 8046648
+     },
+     {
+      "relation": "家族",
+      "birthDate": "1957-10-15",
+      "pensionIncome": 13609372
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2017-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2022-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2020-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 142100,
+    "child": 30000,
+    "total": 1102100,
+    "excelReductionRate": 0
+   }
+  },
+  {
+   "input": {
+    "fiscalYear": 2026,
+    "allDeclared": true,
+    "householdRelief": "none",
+    "members": [
+     {
+      "relation": "本人",
+      "birthDate": "1955-10-15",
+      "pensionIncome": 7840939,
+      "salaryIncome": 2473350,
+      "otherIncome": 8847403
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2000-10-15",
+      "otherIncome": 2542943
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2013-10-15"
+     },
+     {
+      "relation": "家族",
+      "birthDate": "2025-10-15"
+     }
+    ]
+   },
+   "expected": {
+    "medical": 670000,
+    "support": 260000,
+    "care": 0,
+    "child": 30000,
+    "total": 960000,
+    "excelReductionRate": 0
+   }
+  }
+ ]
+}

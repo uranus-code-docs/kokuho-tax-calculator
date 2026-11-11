@@ -12,6 +12,25 @@ const Bracket = z.object({
 
 const CategoryId = z.enum(['medical', 'support', 'care', 'child']);
 
+/**
+ * 計算ルールの確からしさに関する注意書き（画面の「ご注意」に出す。文言は components/Notices.tsx）
+ * - RATES_FROM_PREF_ONLY: 税率は県の資料だけが根拠（市町村のページで確認できていない）
+ * - CAPS_ASSUMED: 課税限度額は国の基準額と仮定した
+ * - CHILD_SUPPORT_NOT_CONFIRMED: 子ども・子育て支援金分を市町村のページで確認できていない（県の資料の共通額で計算）
+ * - RULES_ASSUMED: 軽減判定・未就学児の軽減・端数処理・月割りは国の基準と高崎市の方法で計算した
+ * - NOT_VERIFIED_WITH_EXCEL: 市町村の試算表（Excel）で計算結果を照合していない
+ * - MUNICIPAL_EXCEL_DIFFERS: 市町村の試算表と結果が違う場合がある（理由は notes に書く）
+ */
+export const CaveatCode = z.enum([
+  'RATES_FROM_PREF_ONLY',
+  'CAPS_ASSUMED',
+  'CHILD_SUPPORT_NOT_CONFIRMED',
+  'RULES_ASSUMED',
+  'NOT_VERIFIED_WITH_EXCEL',
+  'MUNICIPAL_EXCEL_DIFFERS',
+]);
+export type CaveatCodeT = z.infer<typeof CaveatCode>;
+
 const AgeMultiplier = z.object({
   preschool: z.number().min(0).max(1).optional(),
   under18: z.number().min(0).max(1).optional(),
@@ -44,6 +63,11 @@ export const RulesetSchema = z
       sources: z.array(z.object({ title: z.string(), url: z.string().url(), retrievedAt: z.string() })).min(1),
       verifiedAt: z.string().nullable(),
       reviewer: z.string().nullable(),
+      /** ページのファイル名（<slug>.html）。高崎市は index.html のため省略 */
+      slug: z.string().regex(/^[a-z]+$/).optional(),
+      caveats: z.array(CaveatCode).default([]),
+      /** 自治体ごとの補足（画面の「ご注意」にそのまま出す） */
+      notes: z.array(z.string()).default([]),
     }),
     ageClasses: z.object({
       seniorAge: z.number().int(),

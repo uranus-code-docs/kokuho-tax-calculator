@@ -8,6 +8,7 @@ export interface MemberForm {
   salary: string;
   pension: string;
   other: string;
+  propertyTax: string; // 固定資産税額（資産割がある市町村だけ入力欄を出す）
   joinMonth: string; // '' or '5'..'12','1'..'3'
   leaveMonth: string;
 }
@@ -25,6 +26,7 @@ export const emptyMember = (id: number, relation = ''): MemberForm => ({
   salary: '',
   pension: '',
   other: '',
+  propertyTax: '',
   joinMonth: '',
   leaveMonth: '',
 });
@@ -56,6 +58,7 @@ export function formToInput(form: HouseholdForm, fiscalYear: number): HouseholdI
       salaryIncome: num(m.salary),
       pensionIncome: num(m.pension),
       otherIncome: num(m.other),
+      propertyTax: num(m.propertyTax),
       joinMonth: month(m.joinMonth),
       leaveMonth: month(m.leaveMonth),
     });

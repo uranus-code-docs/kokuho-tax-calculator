@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
+import { MUNICIPALITIES } from '../data/municipalities';
 
 // 既存サイトの header.html / footer.html と同じ構造（デザインは変えない）
 const TITLE = 'TakasakiCity Tax Calculator';
 const REPOSITORY_URL = 'https://github.com/uranus-code-docs/kokuho-tax-calculator';
 
-export function Header() {
+export function Header({ current }: { current?: string }) {
   return (
     <header>
       <div className="header__logo">
@@ -49,11 +50,15 @@ export function Header() {
               </ul>
             </div>
             <div className="nav-drawer__group">
-              <p className="nav-drawer__ttl">&nbsp;{/* カテゴリ名 */}</p>
+              <p className="nav-drawer__ttl">群馬県の市町村</p>
               <ul className="nav-drawer__list">
-                <li className="nav-drawer__item nav-drawer__item--full">
-                  {/* <a href="">ページタイトル</a> */}
-                </li>
+                {MUNICIPALITIES.map((m) => (
+                  <li key={m.code} className="nav-drawer__item">
+                    <a href={`./${m.page}`} aria-current={m.code === current ? 'page' : undefined}>
+                      {m.name}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
             <div className="nav-drawer__group nav-drawer__group--full">

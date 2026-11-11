@@ -78,6 +78,7 @@ function CategoryBlock(props: { cat: CategoryResult; rules: Ruleset; result: Cal
   const catRule = rules.categories.find((c) => c.id === cat.id)!;
   const [n1, n2, n3] = [startNo, startNo + 1, startNo + 2];
   const unitTimesCount = cat.perCapitaUnit * cat.headcount;
+  const hasAsset = catRule.assetRate > 0;
   return (
     <div className="formset">
       <div className="formset__item formset__item--thick">
@@ -91,6 +92,12 @@ function CategoryBlock(props: { cat: CategoryResult; rules: Ruleset; result: Cal
             </span>
             <Equal />
             <span>（{n1}）所得割額</span>
+            {hasAsset && (
+              <>
+                <Plus />
+                <span>資産割額</span>
+              </>
+            )}
             <Plus />
             <span>（{n2}）均等割額</span>
             <Plus />
@@ -144,6 +151,27 @@ function CategoryBlock(props: { cat: CategoryResult; rules: Ruleset; result: Cal
           </div>
         </div>
       </div>
+
+      {hasAsset && (
+        <div className="formset__item formset__item--thin">
+          <div className="formset__ttl">
+            <span>資産割額</span>
+          </div>
+          <div className="formset__input">
+            <div className="c-equation">
+              <span className="item--result" data-item={`${p}資産割`} data-item-val={yen(cat.assetLevy)}>
+                円
+              </span>
+              <Equal />
+              <span>固定資産税額（土地・家屋分）の合計</span>
+              <i className="icon-math icon-math-times">×</i>
+              <span data-item={`${p}資産割率`} data-item-val={catRule.assetRate}>
+                ％
+              </span>
+            </div>
+          </div>
+        </div>
+      )}
 
       <div className="formset__item formset__item--thin">
         <div className="formset__ttl">

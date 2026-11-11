@@ -1,0 +1,58 @@
+{
+  "102091": [
+    {
+      "reason": "藤岡市のExcelは課税限度額が改正前（医療分65万円・支援金分24万円）。市の税率ページと県の資料は67万円・26万円",
+      "categories": { "medical": { "cap": 650000 }, "support": { "cap": 240000 } }
+    }
+  ],
+  "102075": [
+    {
+      "reason": "館林市のExcelは給与所得控除が改正前（令和6年分まで）の表。令和7年分の所得では最低控除額が55万円→65万円に上がっている",
+      "salaryDeduction": [
+        { "from": 1, "round": null, "rate": 0, "subtract": 0 },
+        { "from": 551000, "round": null, "rate": 1, "subtract": 550000 },
+        { "from": 1619000, "round": null, "rate": 0, "subtract": -1069000 },
+        { "from": 1620000, "round": null, "rate": 0, "subtract": -1070000 },
+        { "from": 1622000, "round": null, "rate": 0, "subtract": -1072000 },
+        { "from": 1624000, "round": null, "rate": 0, "subtract": -1074000 },
+        { "from": 1628000, "round": { "unit": 4000, "mode": "floor" }, "rate": 0.6, "subtract": -100000 },
+        { "from": 1800000, "round": { "unit": 4000, "mode": "floor" }, "rate": 0.7, "subtract": 80000 },
+        { "from": 3600000, "round": { "unit": 4000, "mode": "floor" }, "rate": 0.8, "subtract": 440000 },
+        { "from": 6600000, "round": null, "rate": 0.9, "subtract": 1100000 },
+        { "from": 8500000, "round": null, "rate": 1, "subtract": 1950000 }
+      ]
+    }
+  ],
+  "102067": [
+    {
+      "reason": "沼田市のExcelは「給与所得者等」を給与所得・年金所得が0より大きいかで判定している（計算表!T列）。正しくは給与収入55万円超、年金収入60万円超（65歳以上は125万円超）。令和7年分から給与所得控除の最低額が65万円になったため、給与収入55万円超65万円以下の人が数えられない",
+      "salaryEarnerCriteria": { "salary": 650999, "pensionUnder65": 600000, "pension65Plus": 1100000 }
+    }
+  ],
+  "102121": [
+    {
+      "reason": "みどり市のExcelは、18歳未満の世帯員の所得を子ども・子育て支援金分の所得割に含めない（18歳未満は均等割だけが全額軽減で、所得割はかかる）",
+      "childExcludesUnder18Income": true
+    }
+  ],
+  "104213": [
+    {
+      "reason": "中之条町のExcelは、未就学児の均等割の5割軽減を後期高齢者支援金分にかけていない（医療分だけ）",
+      "categories": { "support": { "preschool": 1 } }
+    },
+    {
+      "reason": "中之条町のExcelは、18歳未満の世帯員の所得を子ども・子育て支援金分の所得割に含めない",
+      "childExcludesUnder18Income": true
+    },
+    {
+      "reason": "中之条町のExcelは軽減判定の式に誤りがある（入力シート!O63 が1行ずれたセルと比べている: 7割はU62、5割はU63=7割の基準額、2割はU65。5割の基準額U64は使われない。さらに65歳以上の年金の特別控除15万円を2回引き、軽減判定用の給与所得に改正前の給与所得控除を使っている）。Excelが判定した軽減割合を使えば金額が一致するかを確かめる",
+      "useExcelReductionRate": true
+    }
+  ],
+  "105210": [
+    {
+      "reason": "板倉町のExcelは、給与所得者等が0人の世帯で軽減判定の基準額から10万円を引いている（43万円＋10万円×(0−1)＝33万円）。給与所得者等が2人以上のときだけ加算するのが正しい",
+      "reductionBase": 330000
+    }
+  ]
+}
