@@ -63,7 +63,7 @@ export const RulesetSchema = z
       sources: z.array(z.object({ title: z.string(), url: z.string().url(), retrievedAt: z.string() })).min(1),
       verifiedAt: z.string().nullable(),
       reviewer: z.string().nullable(),
-      /** ページのファイル名（<slug>.html）。高崎市は index.html のため省略 */
+      /** ページのファイル名（<slug>.html）。高崎市のルールセットは手で管理しているため省略（takasaki.html） */
       slug: z.string().regex(/^[a-z]+$/).optional(),
       caveats: z.array(CaveatCode).default([]),
       /** 自治体ごとの補足（画面の「ご注意」にそのまま出す） */

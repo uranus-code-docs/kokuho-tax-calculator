@@ -7,7 +7,7 @@ export interface MunicipalityEntry {
 
 export const MUNICIPALITIES: readonly MunicipalityEntry[] = [
   { code: '102016', name: '前橋市', page: 'maebashi.html' },
-  { code: '102024', name: '高崎市', page: 'index.html' },
+  { code: '102024', name: '高崎市', page: 'takasaki.html' },
   { code: '102032', name: '桐生市', page: 'kiryu.html' },
   { code: '102041', name: '伊勢崎市', page: 'isesaki.html' },
   { code: '102059', name: '太田市', page: 'ota.html' },

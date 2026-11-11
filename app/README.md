@@ -31,7 +31,7 @@ npm run typecheck
 
 - ルールセットの `meta.status` が `draft` のデータは、`VITE_ALLOW_DRAFT=false` でビルドすると表示されない（「準備中」になる）。
 - 群馬県のほかの34市町村も `reviewed`（2026-11-11。画面に「参考値」）。マスター `tools/gunma/master-2026.json` の `review` で一括して決める。チェック結果は [../docs/gunma/report-2026.md](../docs/gunma/report-2026.md)。
-- ページは `index.html`（高崎市）と `<ローマ字>.html`（ほかの市町村。`tools/gunma/gen-pages.mjs` が生成）。
+- 市町村のページは `<ローマ字>.html`。`takasaki.html`（高崎市）を手で編集し、ほかは `tools/gunma/gen-pages.mjs` が生成する。`index.html` はトップページ用。
 - 高崎市 令和8年度は `reviewed`（2026-11-04）。Excelで計算した938件・公式の試算例（401,700円）の一致と、市の税率表（2026年6月22日更新）との突き合わせを確認済み。画面には「参考値」と表示する。
 
 ## 見た目について

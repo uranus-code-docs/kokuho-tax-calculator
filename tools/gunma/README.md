@@ -6,7 +6,7 @@
 |---|---|
 | `master-2026.json` | マスター。県の税率表から転記した税率・限度額と、根拠（公式ページで確認できたか、Excelの有無）、画面に出す補足 |
 | `gen-rulesets.mjs` | マスター → `app/src/data/rulesets/2026/<コード>.json`（高崎市は上書きしない） |
-| `gen-pages.mjs` | `app/index.html` を雛形に、市町村ページ `app/<slug>.html` と `app/src/data/municipalities.ts` を作る |
+| `gen-pages.mjs` | `app/takasaki.html` を雛形に、市町村ページ `app/<slug>.html` と `app/src/data/municipalities.ts` を作る |
 | `gen-golden.mjs` | 市町村のExcel（`xlsx/`）で計算した期待値 → `app/tests/golden/<コード>-2026.json` |
 | `lo_eval.py` | LibreOffice でExcelにセルの値を入れて再計算し、結果を読み出す（`gen-golden.mjs` から呼ぶ） |
 
