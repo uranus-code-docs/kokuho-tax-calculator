@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { MUNICIPALITIES } from '../data/municipalities';
 
 // 既存サイトの header.html / footer.html と同じ構造（デザインは変えない）
-const TITLE = 'TakasakiCity Tax Calculator';
+const TITLE = 'Gunma Tax Calculator';
 const REPOSITORY_URL = 'https://github.com/uranus-code-docs/kokuho-tax-calculator';
 
 export function Header({ current }: { current?: string }) {

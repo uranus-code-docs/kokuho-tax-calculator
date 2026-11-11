@@ -14,7 +14,7 @@ let n = 0;
 for (const m of master.municipalities) {
   if (m.code === INDEX_CODE) continue;
   const html = template
-    .replace(/<title>[^<]*<\/title>/, `<title>${m.name}の国民健康保険税の計算｜TakasakiCity Tax Calculator</title>`)
+    .replace(/<title>[^<]*<\/title>/, `<title>${m.name}の国民健康保険税の計算｜Gunma Tax Calculator</title>`)
     .replace(/<meta name="description" content="[^"]*" \/>/, `<meta name="description" content="${m.name}（群馬県）の国民健康保険税を試算できます。" />`)
     .replace(/<div id="root"[^>]*><\/div>/, `<div id="root" data-municipality="${m.code}"></div>`)
     .replace(/<!-- 高崎市のページ[^>]*-->/, '<!-- tools/gunma/gen-pages.mjs が takasaki.html から生成（手で編集しない） -->');
