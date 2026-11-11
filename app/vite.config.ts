@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 import fs from 'node:fs';
 import path from 'node:path';
 
-// 市町村ごとのページ（index.html = 高崎市、<slug>.html = ほかの市町村。tools/gunma/gen-pages.mjs が生成）をすべてビルドする
+// すべてのページをビルドする（index.html = トップページ、<slug>.html = 市町村ごとのページ。tools/gunma/gen-pages.mjs が生成）
 const root = path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1'));
 const pages = Object.fromEntries(
   fs

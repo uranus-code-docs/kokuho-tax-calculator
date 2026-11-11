@@ -7,6 +7,7 @@
 | `master-2026.json` | マスター。県の税率表から転記した税率・限度額と、根拠（公式ページで確認できたか、Excelの有無）、画面に出す補足 |
 | `gen-rulesets.mjs` | マスター → `app/src/data/rulesets/2026/<コード>.json`（高崎市は上書きしない） |
 | `gen-pages.mjs` | `app/takasaki.html` を雛形に、市町村ページ `app/<slug>.html` と `app/src/data/municipalities.ts` を作る |
+| `gen-map.py` | 白地図 `materials/10_群馬県白地図.eps` → トップページの地図データ `app/src/data/gunmaMap.ts`（区域の形、市町村名の位置、引き出し線）。Python と fontTools、Windows のメイリオ（文字の読み出しに使う）が必要 |
 | `gen-golden.mjs` | 市町村のExcel（`xlsx/`）で計算した期待値 → `app/tests/golden/<コード>-2026.json` |
 | `lo_eval.py` | LibreOffice でExcelにセルの値を入れて再計算し、結果を読み出す（`gen-golden.mjs` から呼ぶ） |
 
@@ -14,6 +15,7 @@
 # リポジトリのルートで
 node tools/gunma/gen-rulesets.mjs
 node tools/gunma/gen-pages.mjs
+python tools/gunma/gen-map.py
 node tools/gunma/gen-golden.mjs 150            # 全市町村。団体コードを並べるとその市町村だけ
 cd app && npm test                              # Windows は PowerShell から
 ```

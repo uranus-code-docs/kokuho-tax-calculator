@@ -144,3 +144,27 @@
 .foot-github:focus-visible {
   color: #6b7078;
 }
+
+/*
+ * ナビ（ドロワー）の拡張
+ * .nav-drawer__list--col3 … 項目を3カラムに並べる（群馬県の市町村）
+ * .nav-drawer__group--side … PCでは右側に置く（ヘルプ）。下の利用規約などの行はその後ろ
+ */
+.nav-drawer__list.nav-drawer__list--col3 {
+  justify-content: flex-start;
+}
+.nav-drawer__list--col3 > .nav-drawer__item {
+  width: calc(100% / 3);
+}
+.nav-drawer__list--col3 > .nav-drawer__item a {
+  padding: 0 1.75em 0 1em;
+  white-space: nowrap;
+}
+@media (min-width: 960px) {
+  .nav-drawer__group.nav-drawer__group--side {
+    order: 1;
+  }
+  .nav-drawer__group.nav-drawer__group--full {
+    order: 2;
+  }
+}

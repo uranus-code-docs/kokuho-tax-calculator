@@ -1,0 +1,192 @@
+/* トップページ（index.html）だけのスタイル。既存CSS（public/common/css）の変数を使う */
+
+.top-page {
+  --gmap-fill-start: #5b93ff; /* 基本のブルー（--color-ui: #4c88ff）にほんの少しのグラデーション */
+  --gmap-fill-end: #4280f7;
+  --gmap-line: #3c77ea; /* 境界線は基本のブルーより少しだけ暗く */
+
+  /* 中身が少ないときは、フッターを画面の下に付け、地図とフォームを残りの高さの真ん中に置く */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+.top-page > footer {
+  margin-top: 64px;
+}
+
+.top-main {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 40px 0 0;
+}
+.top-main__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+/* 見出し */
+.top-ttl {
+  color: var(--color-ui);
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+  margin: 0;
+}
+.top-ttl__pref {
+  display: block;
+  font-size: 32px;
+  letter-spacing: 0.3em;
+  text-indent: 0.3em; /* letter-spacing の分だけ中央からずれないように */
+}
+.top-ttl__main {
+  display: block;
+  font-size: 32px;
+  letter-spacing: 0.05em;
+}
+/* リード文（文字の大きさはサイトの基本＝body の 16px のまま） */
+.top-lead {
+  margin: 16px 0 0;
+  color: var(--color-ui);
+  text-align: center;
+  line-height: 1.8;
+}
+@media only screen and (max-width: 767px) {
+  .top-lead br {
+    display: none; /* 狭い画面では自然に折り返す */
+  }
+}
+@media only screen and (max-width: 767px) {
+  .top-ttl__pref {
+    font-size: 24px;
+  }
+  .top-ttl__main {
+    font-size: 24px;
+  }
+}
+
+/* 群馬県の地図 */
+.gmap {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  overflow: visible;
+}
+.gmap__fill-start {
+  stop-color: var(--gmap-fill-start);
+}
+.gmap__fill-end {
+  stop-color: var(--gmap-fill-end);
+}
+.gmap a,
+.gmap a:hover,
+.gmap a:focus {
+  opacity: 1;
+  outline: none;
+}
+.gmap__area path,
+.gmap__label rect {
+  fill: url(#gmap-fill);
+  stroke: var(--gmap-line);
+  stroke-width: 1px;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+.gmap__leaders line {
+  stroke: var(--gmap-line);
+  stroke-width: 1px;
+  vector-effect: non-scaling-stroke;
+}
+.gmap__label text {
+  fill: #fff;
+  font-family: inherit;
+  font-weight: 700;
+  /* 名前が隣の区域にはみ出しても読めるように、地の色でフチ取る（元の白地図の白フチと同じ役目） */
+  stroke: var(--color-ui);
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+}
+/* ホバー・検索で選ばれた市町村: 白地にブルーの文字 */
+.gmap__area.is-active path,
+.gmap__label.is-active rect {
+  fill: #fff;
+}
+.gmap__label.is-active text {
+  fill: var(--color-ui);
+  stroke: #fff;
+}
+
+/* 市町村の検索 */
+.top-search {
+  width: 100%;
+  max-width: 480px;
+}
+.top-search__label {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+.top-search .top-search__row {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+.top-search .top-search__row [type='text'] {
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 44px;
+}
+.top-search__btn {
+  flex: 0 0 auto;
+  height: 44px;
+  padding: 0 28px;
+  border: 1px solid var(--color-ui);
+  border-radius: 9999px;
+  background: #fff;
+  color: var(--color-ui);
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.top-search__btn:hover,
+.top-search__btn:focus-visible {
+  background: var(--color-ui);
+  color: #fff;
+}
+.top-search__result {
+  min-height: 40px;
+  margin-top: 12px;
+}
+.top-search__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.top-search__link {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid var(--color-ui);
+  border-radius: 9999px;
+  background: #fff;
+  color: var(--color-ui);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.top-search__link:hover,
+.top-search__link:focus {
+  opacity: 1;
+  background: var(--color-ui);
+  color: #fff;
+}
+.top-search__empty {
+  font-size: 14px;
+  margin: 0;
+}

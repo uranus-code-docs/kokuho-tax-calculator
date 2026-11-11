@@ -38,7 +38,7 @@ export function Header({ current }: { current?: string }) {
                 <a href="">新規会員登録</a>
               </div> */}
             </nav>
-            <div className="nav-drawer__group">
+            <div className="nav-drawer__group nav-drawer__group--side">
               <p className="nav-drawer__ttl">ヘルプ</p>
               <ul className="nav-drawer__list">
                 <li className="nav-drawer__item">
@@ -51,7 +51,7 @@ export function Header({ current }: { current?: string }) {
             </div>
             <div className="nav-drawer__group">
               <p className="nav-drawer__ttl">群馬県の市町村</p>
-              <ul className="nav-drawer__list">
+              <ul className="nav-drawer__list nav-drawer__list--col3">
                 {MUNICIPALITIES.map((m) => (
                   <li key={m.code} className="nav-drawer__item">
                     <a href={`./${m.page}`} aria-current={m.code === current ? 'page' : undefined}>
@@ -70,7 +70,7 @@ export function Header({ current }: { current?: string }) {
                   <a href="">個人情報保護方針</a>
                 </li> */}
                 <li className="nav-drawer__item">
-                  <a href="https://synkro.jp/" target="_blank">運営会社</a>
+                  <a href="https://synkro.jp/" target="_blank">制作・運営</a>
                 </li>
               </ul>
             </div>
